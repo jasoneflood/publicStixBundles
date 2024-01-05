@@ -94,9 +94,9 @@
     "name": "Potential ransomeware downloaded from suspicious domain",
     "description": "A file has been downloaded of a file type known to be associated with ransomware from a host in a suspicious domain.",
     "score": "medium",
-    "severity": 0.5,
-    "cumulative_score": 0.5,
-    "automatic_score": "5",
+    "severity": 0.8,
+    "cumulative_score": 0.8,
+    "automatic_score": "8",
     "detection_source_type_name": "509",
     "original_time": 1702383022000,
     "mitre_ids": ["TA0002"],
@@ -154,8 +154,8 @@
             {
                 "scores": [
                     {
-                        "automatic_score": "5",
-                        "severity": "0.5",
+                        "automatic_score": "8",
+                        "severity": "0.8",
                         "category": "finding_parameter",
                         "description": "Crowdstrike: Suspicious Domain",
                         "module_name": "RULE_ENGINE",
@@ -197,9 +197,9 @@
     "name": "RYUK malware signature detected by Falcon Crowdstrike ML",
     "description": "This file meets the file analysis ML algorithm's high-confidence threshold for malware. It has been specifically matched to RYUK",
     "score": "medium",
-    "severity": 0.5,
-    "cumulative_score": 0.5,
-    "automatic_score": "5",
+    "severity": 0.9,
+    "cumulative_score": 0.9,
+    "automatic_score": "9",
     "detection_source_type_name": "509",
     "original_time": 1702383025000,
     "mitre_ids": ["TA0003","TA0004","TA0005"],
@@ -269,7 +269,7 @@
     ],
     "incident_artifacts": [
       {
-        "value": "0eed6a270c65ab473f149b8b13c46c68",
+        "value": "71d5ee75766497e2c37b20503cf02f53",
         "type": 13,
         "generic_properties": [
           {
@@ -279,6 +279,113 @@
           {
             "name": "id",
             "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb416"
+          }
+        ],
+        "explainability": [
+          { 
+            "severity": "0.9",
+            "context": "file",
+            "create_date": 1702383025000,
+            "scores": [     
+                {           
+                    "automatic_score": "9",
+                    "severity": "0.9",
+                    "category": "Threat Intelligence",
+                    "description": "X-Force Threat Intelligence",
+                    "module_name": "TIS"
+                 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RYUK malware signature detected by Falcon Crowdstrike ML",
+    "description": "This file meets the file analysis ML algorithm's high-confidence threshold for malware. It has been specifically matched to RYUK",
+    "score": "medium",
+    "severity": 0.9,
+    "cumulative_score": 0.9,
+    "automatic_score": "9",
+    "detection_source_type_name": "509",
+    "original_time": 1702383025000,
+    "mitre_ids": ["TA0003","TA0004","TA0005"],
+    "external_mitre_ids": [],
+    "observable_refs": [
+      "file--a054c753-6787-5a09-850f-a67d2cf585ff"
+    ],
+    "properties": [
+      {
+        "name": "external_alert_id",
+        "value": "ea637649185698214647_-2139933057"
+      },
+      {
+        "name": "external_detection_id",
+        "value": "d60f5b90-ecd8-4d77-8186-a801597ed762"
+      },
+      {
+        "name": "finding_type",
+        "value": "Malware"
+      },
+      {
+        "name": "time_observed",
+        "value": "1702383025000"
+      },
+      {
+        "name": "customer_id",
+        "value": "BAO"
+      },
+      {
+        "name": "device_id",
+        "value": "11ae255fa5abb6bfb35d9ce1c542ea525335aa7b"
+      },
+      {
+        "name": "detection_source_type_name",
+        "value": "509"
+      },
+      {
+        "name": "detection_source_type_category",
+        "value": "EDR"
+      },
+      {
+        "name": "severity",
+        "value": 0.9
+      },
+      {
+        "name": "credibility",
+        "value": 1.0
+      },
+      {
+        "name": "observable_ref_list",
+        "value": "[{observable_ref=file--a054c753-6787-5a09-850f-a67d2cf585ff,time_observed=2023-12-12T12:10:25.7699973Z}]"
+      }
+    ],
+    "explainability": [
+            {
+                "scores": [
+                    {
+                        "severity": "0.9",
+                        "category": "finding_parameter",
+                        "description": "Crowdstrike: RYUK malware detected",
+                        "module_name": "RULE_ENGINE",
+                        "rule_id": "Crowdstrike",
+                        "automatic_score": "9"
+                    }
+                ]
+            }
+    ],
+    "incident_artifacts": [
+      {
+        "value": "8555b213260ba5eda4bf37652cecb431",
+        "type": 13,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "file--57f6532e-3ee1-4f84-973e-9431e98bb416"
+          },
+          {
+            "name": "id",
+            "value": "file--57f6532e-3ee1-4f84-973e-9431e98bb416"
           }
         ],
         "explainability": [
@@ -364,8 +471,8 @@
             {
                 "scores": [
                     {
-                        "automatic_score": "5",
-                        "severity": "0.5",
+                        "automatic_score": "8",
+                        "severity": "0.8",
                         "category": "finding_parameter",
                         "description": "QRadar: Windows Network Enumeration",
                         "module_name": "RULE_ENGINE",
@@ -473,7 +580,7 @@
         ]
       },
 	  {
-        "value": "mail-server.baneandox.com",
+        "value": "frank-adams-pc.baneandox.com",
         "type": 25,
         "generic_properties": [
           {
@@ -483,7 +590,7 @@
         ]
       },
 	  {
-        "value": "0eed6a270c65ab473f149b8b13c46c68",
+        "value": "71d5ee75766497e2c37b20503cf02f53",
         "type": 13,
         "generic_properties": [
           {
@@ -493,6 +600,641 @@
           {
             "name": "id",
             "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb416"
+          }
+        ],
+        "explainability": [
+          { 
+            "severity": "0.9",
+            "context": "file",
+            "create_date": 1702383025000,
+            "scores": [     
+                {           
+                    "automatic_score": "9",
+                    "severity": "0.9",
+                    "category": "Threat Intelligence",
+                    "description": "X-Force Threat Intelligence",
+                    "module_name": "TIS"
+                 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A file has been transfered to a host from a compromised host",
+    "description": "A file matching a known signature has been transfered from a known compromised host : A network host was accessed",
+    "score": "high",
+    "severity": 0.8,
+    "cumulative_score": 0.8,
+    "automatic_score": "8",
+    "detection_source_type_name": "514",
+    "original_time": 1702383430000,
+    "mitre_ids": ["TA0008","T1021"],
+    "external_mitre_ids": [],
+    "observable_refs": [
+      "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb427","x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb428"
+    ],
+    "properties": [
+      {
+        "name": "external_alert_id",
+        "value": "db637649185698214647_-2139933045"
+      },
+      {
+        "name": "external_detection_id",
+        "value": "e60f5b90-ecd8-4d77-8186-a8015976c767"
+      },
+      {
+        "name": "finding_type",
+        "value": "Malware"
+      },
+      {
+        "name": "time_observed",
+        "value": "1702383430000"
+      },
+      {
+        "name": "customer_id",
+        "value": "BAO"
+      },
+      {
+        "name": "device_id",
+        "value": "21ae255fa5abb6bfb35d9ce1c542ea525335ab7b"
+      },
+      {
+        "name": "detection_source_type_name",
+        "value": "514"
+      },
+      {
+        "name": "detection_source_type_category",
+        "value": "Cloud Native SIEM"
+      },
+      {
+        "name": "severity",
+        "value": 7.5
+      },
+      {
+        "name": "credibility",
+        "value": 1.0
+      },
+      {
+        "name": "observable_ref_list",
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb427,time_observed=2023-12-12T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb428,time_observed=2023-12-12T12:17:10.7699973Z}]"
+      }
+    ],
+    "explainability": [
+            {
+                "scores": [
+                    {
+                        "severity": "7.5",
+                        "category": "finding_parameter",
+                        "description": "QRadar: File transfer from a Compromised Host",
+                        "module_name": "RULE_ENGINE",
+                        "rule_id": "QRadar",
+                        "automatic_score": "7"
+                    }
+                ]
+            }
+    ],
+    "incident_artifacts": [
+       {
+        "value": "jason-flood-pc.baneandox.com",
+        "type": 25,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb427"
+          }
+        ]
+      },
+	  {
+        "value": "john-clarke-pc.baneandox.com",
+        "type": 25,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb428"
+          }
+        ]
+      },
+	  {
+        "value": "71d5ee75766497e2c37b20503cf02f53",
+        "type": 13,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb426"
+          },
+          {
+            "name": "id",
+            "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb426"
+          }
+        ],
+        "explainability": [
+          { 
+            "severity": "0.9",
+            "context": "file",
+            "create_date": 1702383025000,
+            "scores": [     
+                {           
+                    "automatic_score": "9",
+                    "severity": "0.9",
+                    "category": "Threat Intelligence",
+                    "description": "X-Force Threat Intelligence",
+                    "module_name": "TIS"
+                 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A file has been transfered to a host from a compromised host",
+    "description": "A file matching a known signature has been transfered from a known compromised host : A network host was accessed",
+    "score": "high",
+    "severity": 0.8,
+    "cumulative_score": 0.8,
+    "automatic_score": "8",
+    "detection_source_type_name": "514",
+    "original_time": 1702383430000,
+    "mitre_ids": ["TA0008","T1021"],
+    "external_mitre_ids": [],
+    "observable_refs": [
+      "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb437","x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb438"
+    ],
+    "properties": [
+      {
+        "name": "external_alert_id",
+        "value": "dc637649185698214647_-2139933045"
+      },
+      {
+        "name": "external_detection_id",
+        "value": "f60f5b90-ecd8-4d77-8186-a8015976c767"
+      },
+      {
+        "name": "finding_type",
+        "value": "Malware"
+      },
+      {
+        "name": "time_observed",
+        "value": "1702383430000"
+      },
+      {
+        "name": "customer_id",
+        "value": "BAO"
+      },
+      {
+        "name": "device_id",
+        "value": "31ae255fa5abb6bfb35d9ce1c542ea525335ab7b"
+      },
+      {
+        "name": "detection_source_type_name",
+        "value": "514"
+      },
+      {
+        "name": "detection_source_type_category",
+        "value": "Cloud Native SIEM"
+      },
+      {
+        "name": "severity",
+        "value": 7.5
+      },
+      {
+        "name": "credibility",
+        "value": 1.0
+      },
+      {
+        "name": "observable_ref_list",
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb437,time_observed=2023-12-12T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb438,time_observed=2023-12-12T12:17:10.7699973Z}]"
+      }
+    ],
+    "explainability": [
+            {
+                "scores": [
+                    {
+                        "severity": "7.5",
+                        "category": "finding_parameter",
+                        "description": "QRadar: File transfer from a Compromised Host",
+                        "module_name": "RULE_ENGINE",
+                        "rule_id": "QRadar",
+                        "automatic_score": "7"
+                    }
+                ]
+            }
+    ],
+    "incident_artifacts": [
+       {
+        "value": "jason-flood-pc.baneandox.com",
+        "type": 25,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb437"
+          }
+        ]
+      },
+	  {
+        "value": "adam-franks-pc.baneandox.com",
+        "type": 25,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb438"
+          }
+        ]
+      },
+	  {
+        "value": "71d5ee75766497e2c37b20503cf02f53",
+        "type": 13,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb436"
+          },
+          {
+            "name": "id",
+            "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb436"
+          }
+        ],
+        "explainability": [
+          { 
+            "severity": "0.9",
+            "context": "file",
+            "create_date": 1702383025000,
+            "scores": [     
+                {           
+                    "automatic_score": "9",
+                    "severity": "0.9",
+                    "category": "Threat Intelligence",
+                    "description": "X-Force Threat Intelligence",
+                    "module_name": "TIS"
+                 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A file has been transfered to a host from a compromised host",
+    "description": "A file matching a known signature has been transfered from a known compromised host : A network host was accessed",
+    "score": "high",
+    "severity": 0.8,
+    "cumulative_score": 0.8,
+    "automatic_score": "8",
+    "detection_source_type_name": "514",
+    "original_time": 1702383430000,
+    "mitre_ids": ["TA0008","T1021"],
+    "external_mitre_ids": [],
+    "observable_refs": [
+      "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb447","x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb448"
+    ],
+    "properties": [
+      {
+        "name": "external_alert_id",
+        "value": "dc637649185698214647_-2139933045"
+      },
+      {
+        "name": "external_detection_id",
+        "value": "f60f5b90-ecd8-4d77-8186-a8015976c767"
+      },
+      {
+        "name": "finding_type",
+        "value": "Malware"
+      },
+      {
+        "name": "time_observed",
+        "value": "1702383430000"
+      },
+      {
+        "name": "customer_id",
+        "value": "BAO"
+      },
+      {
+        "name": "device_id",
+        "value": "31ae255fa5abb6bfb35d9ce1c542ea525335ab7b"
+      },
+      {
+        "name": "detection_source_type_name",
+        "value": "514"
+      },
+      {
+        "name": "detection_source_type_category",
+        "value": "Cloud Native SIEM"
+      },
+      {
+        "name": "severity",
+        "value": 7.5
+      },
+      {
+        "name": "credibility",
+        "value": 1.0
+      },
+      {
+        "name": "observable_ref_list",
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb447,time_observed=2023-12-12T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb448,time_observed=2023-12-12T12:17:10.7699973Z}]"
+      }
+    ],
+    "explainability": [
+            {
+                "scores": [
+                    {
+                        "severity": "7.5",
+                        "category": "finding_parameter",
+                        "description": "QRadar: File transfer from a Compromised Host",
+                        "module_name": "RULE_ENGINE",
+                        "rule_id": "QRadar",
+                        "automatic_score": "7"
+                    }
+                ]
+            }
+    ],
+    "incident_artifacts": [
+       {
+        "value": "jason-flood-pc.baneandox.com",
+        "type": 25,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb447"
+          }
+        ]
+      },
+	  {
+        "value": "robert-dibattista-pc.baneandox.com",
+        "type": 25,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb448"
+          }
+        ]
+      },
+	  {
+        "value": "8555b213260ba5eda4bf37652cecb431",
+        "type": 13,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb447"
+          },
+          {
+            "name": "id",
+            "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb447"
+          }
+        ],
+        "explainability": [
+          { 
+            "severity": "0.9",
+            "context": "file",
+            "create_date": 1702383025000,
+            "scores": [     
+                {           
+                    "automatic_score": "9",
+                    "severity": "0.9",
+                    "category": "Threat Intelligence",
+                    "description": "X-Force Threat Intelligence",
+                    "module_name": "TIS"
+                 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A file has been transfered to a host from a compromised host",
+    "description": "A file matching a known signature has been transfered from a known compromised host : A network host was accessed",
+    "score": "high",
+    "severity": 0.8,
+    "cumulative_score": 0.8,
+    "automatic_score": "8",
+    "detection_source_type_name": "514",
+    "original_time": 1702383430000,
+    "mitre_ids": ["TA0008","T1021"],
+    "external_mitre_ids": [],
+    "observable_refs": [
+      "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb457","x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb458"
+    ],
+    "properties": [
+      {
+        "name": "external_alert_id",
+        "value": "dc637649185698214647_-2139933045"
+      },
+      {
+        "name": "external_detection_id",
+        "value": "f60f5b90-ecd8-4d77-8186-a8015976c767"
+      },
+      {
+        "name": "finding_type",
+        "value": "Malware"
+      },
+      {
+        "name": "time_observed",
+        "value": "1702383430000"
+      },
+      {
+        "name": "customer_id",
+        "value": "BAO"
+      },
+      {
+        "name": "device_id",
+        "value": "31ae255fa5abb6bfb35d9ce1c542ea525335ab7b"
+      },
+      {
+        "name": "detection_source_type_name",
+        "value": "514"
+      },
+      {
+        "name": "detection_source_type_category",
+        "value": "Cloud Native SIEM"
+      },
+      {
+        "name": "severity",
+        "value": 7.5
+      },
+      {
+        "name": "credibility",
+        "value": 1.0
+      },
+      {
+        "name": "observable_ref_list",
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb457,time_observed=2023-12-12T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb458,time_observed=2023-12-12T12:17:10.7699973Z}]"
+      }
+    ],
+    "explainability": [
+            {
+                "scores": [
+                    {
+                        "severity": "7.5",
+                        "category": "finding_parameter",
+                        "description": "QRadar: File transfer from a Compromised Host",
+                        "module_name": "RULE_ENGINE",
+                        "rule_id": "QRadar",
+                        "automatic_score": "7"
+                    }
+                ]
+            }
+    ],
+    "incident_artifacts": [
+       {
+        "value": "jason-flood-pc.baneandox.com",
+        "type": 25,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb457"
+          }
+        ]
+      },
+	  {
+        "value": "sales-database.baneandox.com",
+        "type": 25,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb458"
+          }
+        ]
+      },
+	  {
+        "value": "8555b213260ba5eda4bf37652cecb431",
+        "type": 13,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb447"
+          },
+          {
+            "name": "id",
+            "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb447"
+          }
+        ],
+        "explainability": [
+          { 
+            "severity": "0.9",
+            "context": "file",
+            "create_date": 1702383025000,
+            "scores": [     
+                {           
+                    "automatic_score": "9",
+                    "severity": "0.9",
+                    "category": "Threat Intelligence",
+                    "description": "X-Force Threat Intelligence",
+                    "module_name": "TIS"
+                 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A file has been transfered to a host from a compromised host",
+    "description": "A file matching a known signature has been transfered from a known compromised host : A network host was accessed",
+    "score": "high",
+    "severity": 0.8,
+    "cumulative_score": 0.8,
+    "automatic_score": "8",
+    "detection_source_type_name": "514",
+    "original_time": 1702383430000,
+    "mitre_ids": ["TA0008","T1021"],
+    "external_mitre_ids": [],
+    "observable_refs": [
+      "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb467","x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb468"
+    ],
+    "properties": [
+      {
+        "name": "external_alert_id",
+        "value": "dd637649185698214647_-2139933045"
+      },
+      {
+        "name": "external_detection_id",
+        "value": "f60f5b90-ecd8-4d77-8186-a8015976c777"
+      },
+      {
+        "name": "finding_type",
+        "value": "Malware"
+      },
+      {
+        "name": "time_observed",
+        "value": "1702383430000"
+      },
+      {
+        "name": "customer_id",
+        "value": "BAO"
+      },
+      {
+        "name": "device_id",
+        "value": "31ae255fa5abb6bfb35d9ce1c542ea525335ab8b"
+      },
+      {
+        "name": "detection_source_type_name",
+        "value": "514"
+      },
+      {
+        "name": "detection_source_type_category",
+        "value": "Cloud Native SIEM"
+      },
+      {
+        "name": "severity",
+        "value": 7.5
+      },
+      {
+        "name": "credibility",
+        "value": 1.0
+      },
+      {
+        "name": "observable_ref_list",
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb467,time_observed=2023-12-12T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb468,time_observed=2023-12-12T12:17:10.7699973Z}]"
+      }
+    ],
+    "explainability": [
+            {
+                "scores": [
+                    {
+                        "severity": "7.5",
+                        "category": "finding_parameter",
+                        "description": "QRadar: File transfer from a Compromised Host",
+                        "module_name": "RULE_ENGINE",
+                        "rule_id": "QRadar",
+                        "automatic_score": "7"
+                    }
+                ]
+            }
+    ],
+    "incident_artifacts": [
+       {
+        "value": "jason-flood-pc.baneandox.com",
+        "type": 25,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb467"
+          }
+        ]
+      },
+	  {
+        "value": "user-database.baneandox.com",
+        "type": 25,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb468"
+          }
+        ]
+      },
+	  {
+        "value": "8555b213260ba5eda4bf37652cecb431",
+        "type": 13,
+        "generic_properties": [
+          {
+            "name": "observable_ref",
+            "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb467"
+          },
+          {
+            "name": "id",
+            "value": "file--57f6532e-3ee1-4f84-973f-9431e98bb467"
           }
         ],
         "explainability": [
@@ -600,7 +1342,7 @@
         ]
       },
 	  {
-        "value": "mail-server.baneandox.com",
+        "value": "sales-database.baneandox.com",
         "type": 25,
         "generic_properties": [
           {
@@ -737,7 +1479,7 @@
         ]
       },
 	   {
-        "value": "mail-server.baneandox.com",
+        "value": "sales-database.baneandox.com",
         "type": 25,
         "generic_properties": [
           {

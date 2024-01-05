@@ -1,1 +1,1493 @@
-{    "type": "bundle",    "id": "bundle--281fe97a-35d8-4b84-be2e-253047cc6274",    "spec_version": "2.0",    "objects": [        {            "type": "identity",            "id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",            "name": "shifter_proxy",            "identity_class": "events",            "created": "2024-01-04T13:01:38.295Z",            "modified": "2024-01-04T13:01:38.295Z"        },        {            "id": "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b",            "type": "observed-data",            "created": "2024-01-04T12:13:20.874Z",            "objects": {                "0": {                    "id": "CIDD706957",                    "type": "x-mss-customer"                },                "1": {                    "id": "PR0000000037382",                    "ip": "198.23.124.4",                    "name": "bao-us-pa1",                    "type": "x-mss-device",                    "vendor": "49",                    "version": "Palo Jan 04.1.8"                },                "2": {                    "type": "network-traffic",                    "dst_ref": "6",                    "src_ref": "5",                    "dst_port": 80,                    "src_port": 49888,                    "protocols": [                        "tcp"                    ]                },                "3": {                    "type": "artifact",                    "payload_bin": "RGVjIDEyIDEyOjEzOjEzIDEwLjEwLjIwLjEgIDEsMjAyMy8xMi8xMiAxMjoxMzoxMiwwMDc5NTEwMDAwMzU1OTIsVFJBRkZJQyxlbmQsMjMxMCwyMDIzLzEyLzEyIDEyOjEzOjEyLDEwLjEwLjIwLjEwLDEyOC4yMTAuMTU3LjI1MSwwLjAuMC4wLDAuMC4wLjAsUEEtdG8tQ1AtcW94LCwsd2ViLWJyb3dzaW5nLHZzeXMxLFByaXZhdGUsVlBOLGV0aGVybmV0MS8yLHR1bm5lbC4yLE1TUyBMb2cgRm9yd2FyZGluZywyMDIzLzEyLzEyIDEyOjI0OjEyLDIxMzM1MCwxLDQ5ODg4LDgwLDAsMCwweDcwLHRjcCxhbGxvdywzNTMyLDc1NCwyNzc4LDE0LDIwMjMvMTIvMTIgMTI6MjQ6MDAsMCxwcml2YXRlLWlwLWFkZHJlc3NlcywwLDgyNTY5NDgzMTksMHgwLDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDAsNyw3LHRjcC1maW4sMCwwLDAsMCwseGZyLXVzLXBhMSxmcm9tLXBvbGljeSwsLDAsLDAsLE4vQSwwLDAsMCwwLGQ0YzM0ZmRlLWU5MDctNDU4Ny1iMmU3LTc4ZjA2YjIxMGQzYywwLDAsLCwsLCws"                },                "4": {                    "type": "x-oca-event",                    "action": "ACCEPT",                    "ip_refs": [                        "5",                        "6"                    ],                    "host_ref": "7",                    "network_ref": "2",                    "original_ref": "3"                },                "5": {                    "type": "ipv4-addr",                    "value": "10.10.20.10"                },                "6": {                    "type": "ipv4-addr",                    "value": "128.210.157.251"                },                "7": {                    "type": "x-oca-asset",                    "ip_refs": [                        "5"                    ]                }            },            "modified": "2024-01-04T12:13:20.874Z",            "last_observed": "2024-01-04T12:13:20.874Z",            "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",            "first_observed": "2024-01-04T12:13:20.874Z",            "number_observed": 1        },        {            "id": "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2",            "type": "observed-data",            "created": "2024-01-04T12:15:55.950Z",            "objects": {                "0": {                    "code": 1,                    "type": "x-oca-event",                    "agent": "WindowsAuthServer @ frank-adams-pc",                    "action": "Process Create",                    "created": "2024-01-04T12:15:55.950Z",                    "outcome": "Process Creation Success",                    "category": [                        "System"                    ],                    "file_ref": "6",                    "host_ref": "2",                    "provider": "Microsoft Windows Security Event Log",                    "user_ref": "3",                    "process_ref": "4",                    "original_ref": "5",                    "parent_process_ref": "11"                },                "1": {                    "type": "ipv4-addr",                    "value": "10.10.20.10",                    "resolves_to_refs": [                        "12"                    ]                },                "2": {                    "type": "x-oca-asset",                    "hostname": "frank-adams-pc.baneandox.com",                    "ip_refs": [                        "1"                    ]                },                "3": {                    "type": "user-account",                    "user_id": "frank-adams@baneandox.com"                },                "4": {                    "pid": 26326,                    "name": "net.exe",                    "type": "process",                    "binary_ref": "7",                    "parent_ref": "11",                    "command_line": "\"C:\\WINDOWS\\SysWOW64\net.exe\" view",                    "creator_user_ref": "3"                },                "5": {                    "type": "artifact",                    "payload_bin": "PDEzPkRlYyAxMiAxMjoxNTo0OCBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9NjE2NTUxNjY5NDggVGltZVdyaXR0ZW49NjE2NTYyMDM3NDggTGV2ZWw9SW5mb3JtYXRpb25hbCBLZXl3b3Jkcz0weDgwMDAwMDAwMDAwMDAwMDAgVGFzaz1TeXNtb25UYXNrLVNZU01PTl9DUkVBVEVfUFJPQ0VTUyAgIE9wY29kZT1JbmZvIE1lc3NhZ2U9UHJvY2VzcyBDcmVhdGU6IFJ1bGVOYW1lOiAtIFV0Y1RpbWU6IDIwMjMtMTItMTIgMTI6MTU6NDYuMTE3IFByb2Nlc3NHdWlkOiB7MjUzYWNmNjctM2E2Ni02MDAwLTZmNzAtMDEwMDAwMDAwYjAwfSBQcm9jZXNzSWQ6IDI2MzI0IEltYWdlOiBDOlxXaW5kb3dzXFN5c1dPVzY0XG5ldC5leGUgRmlsZVZlcnNpb246IDEwLjAuMTkwNDEuNTQ2IChXaW5CdWlsZC4xNjAxMDEuMDgwMCkgRGVzY3JpcHRpb246IENPTSBTdXJyb2dhdGUgUHJvZHVjdDogTWljcm9zb2Z01LnigKYgV2luZG93c9S54oCmIE9wZXJhdGluZyBTeXN0ZW0gQ29tcGFueTogTWljcm9zb2Z0IENvcnBvcmF0aW9uIE9yaWdpbmFsRmlsZU5hbWU6IG5ldC5leGUgQ29tbWFuZExpbmU6ICJDOlxXSU5ET1dTXFN5c1dPVzY0XG5ldC5leGUgdmlldyIgQ3VycmVudERpcmVjdG9yeTogQzpcV0lORE9XU1xzeXN0ZW0zMlwgVXNlcjogQXp1cmVBRFxTLTEtNS04IExvZ29uR3VpZDogezI1M2FjZjY3LTM1ZDgtNWZlOC0zNGFjLTYyMTgwMDAwMDAwMH0gTG9nb25JZDogMHgxODYyQUMzNCBUZXJtaW5hbFNlc3Npb25JZDogMiBJbnRlZ3JpdHlMZXZlbDogTWVkaXVtIEhhc2hlczogTUQ1PTNGM0M5NDg1RjhGOTdBQzA0QzhFNDNFRjQ0NjNBNjhELFNIQTI1Nj0zRUQ2OUNBQUIwMzUyNThFMDA4RUZCQ0Y0MERCMzA1ODkxQjQwQkEwMkNBMjczN0UyMERFRkE3QzJENEFGQUY3LElNUEhBU0g9QjZBNkM1MjQ3RUZCRDI2MTBFM0RFQTQ0NjQ5RDcwNDEgUGFyZW50UHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0yMDU5LTVmZTUtMGYwMC0wMDAwMDAwMDBiMDB9IFBhcmVudFByb2Nlc3NJZDogMTE2NCBQYXJlbnRJbWFnZTogQzpcV2luZG93c1xTeXN0ZW0zMlxzdmNob3N0LmV4ZSBQYXJlbnRDb21tYW5kTGluZTogQzpcV0lORE9XU1xzeXN0ZW0zMlxzdmNob3N0LmV4ZSAtayBEY29tTGF1bmNoIC1w"                },                "6": {                    "type": "file",                    "hashes": {                        "MD5": "3F3C9485F8F97AC04C8E43EF4463A68D"                    }                },                "7": {                    "name": "net.exe",                    "type": "file",                    "parent_directory_ref": "8"                },                "8": {                    "path": "C:\\Windows\\SysWOW64",                    "type": "directory"                },                "9": {                    "name": "svchost.exe",                    "type": "file",                    "parent_directory_ref": "10"                },                "10": {                    "path": "C:\\Windows\\System32",                    "type": "directory"                },                "11": {                    "pid": 1164,                    "type": "process",                    "binary_ref": "9",                    "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"                },                "12": {                    "type": "domain-name",                    "value": "frank-adams-pc.baneandox.com"                },                "13": {                    "type": "x-ibm-finding",                    "severity": 100,                    "name": "Windows Network Enumeration",                    "ttp_tagging_refs": [                        "14",                        "16"                    ]                },                "14": {                    "type": "x-ibm-ttp-tagging",                    "extensions": {                        "mitre-attack-ext": {                            "tactic_name": "Discovery"                        }                    },                    "kill_chain_phases": [                        "15"                    ]                },                "15": {                    "type": "kill-chain-phase",                    "phase_name": "Discovery"                },                "16": {                    "type": "x-ibm-ttp-tagging",                    "extensions": {                        "mitre-attack-ext": {                            "technique_name": "Remote System Discovery (T1018)"                        }                    }                }            },            "modified": "2024-01-04T12:15:55.950Z",            "last_observed": "2024-01-04T12:15:55.950Z",            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",            "first_observed": "2024-01-04T12:15:55.950Z",            "number_observed": 1        },        {            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",            "type": "observed-data",            "created": "2024-01-04T12:17:10.940Z",            "objects": {                "0": {                    "code": 1,                    "type": "x-oca-event",                    "agent": "WindowsAuthServer @ frank-adams-pc",                    "action": "Process Create",                    "nt_ref": "2",                    "created": "2024-01-04T12:17:10.940Z",                    "outcome": "Process Creation Success",                    "category": [                        "System"                    ],                    "file_ref": "7",                    "host_ref": "3",                    "provider": "Microsoft Windows Security Event Log",                    "user_ref": "4",                    "process_ref": "5",                    "original_ref": "6",                    "parent_process_ref": "12"                },                "1": {                    "type": "ipv4-addr",                    "value": "10.10.20.10",                    "resolves_to_refs": [                        "13"                    ]                },                "2": {                    "type": "network-traffic",                    "dst_ref": "14",                    "src_ref": "1",                    "dst_port": 5985,                    "src_port": 23178,                    "protocols": [                        "tcp"                    ]                },                "3": {                    "type": "x-oca-asset",                    "hostname": "frank-adams-pc.baneandox.com",                    "ip_refs": [                        "1"                    ]                },                "4": {                    "type": "user-account",                    "user_id": "frank-adams@baneandox.com"                },                "5": {                    "pid": 26329,                    "name": "wsmprovhost.exe",                    "type": "process",                    "binary_ref": "8",                    "parent_ref": "12",                    "command_line": "\"C:\\WINDOWS\\SysWOW64\\wsmprovhost.exe\" connect sales-database.baneandox.com",                    "creator_user_ref": "4"                },                "6": {                    "type": "artifact",                    "payload_bin": "PDEzPkRlYyAxMiAxMjoxNzoxMiBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9NjE2NTUxNjcwMzIgIFRpbWVXcml0dGVuPTYxNjU1MTY3MDMyICBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMy0xMi0xMiAxMjoxNzoxMi4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTUueKApiBXaW5kb3dz1LnigKYgT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXGZyYW5rLWFkYW1zTG9nb25HdWlkOiB7MjUzYWNmNjctMzVkOC01ZmU4LTM0YWMtNjIxODAwMDAwMDAwfSBMb2dvbklkOiAweDE4NjJBQzM0IFRlcm1pbmFsU2Vzc2lvbklkOiAyIEludGVncml0eUxldmVsOiBNZWRpdW0gSGFzaGVzOiBNRDU9NkYzQzk0ODVGOEY5N0FDMDRDOEU0M0VGNDQ2M0E2OEMsU0hBMjU2PTNFRDY5Q0FBQjAzNTI1OEUwMDhFRkJDRjQwREIzMDU4OTFCNDBCQTAyQ0EyNzM3RTIwREVGQTdDMkQ0QUZBRjcsSU1QSEFTSD1CNkE2QzUyNDdFRkJEMjYxMEUzREVBNDQ2NDlENzA0MSBQYXJlbnRQcm9jZXNzR3VpZDogezI1M2FjZjY3LTIwNTktNWZlNS0wZjAwLTAwMDAwMDAwMGIwMH0gUGFyZW50UHJvY2Vzc0lkOiAxMTY0IFBhcmVudEltYWdlOiBDOlxXaW5kb3dzXFN5c3RlbTMyXHN2Y2hvc3QuZXhlIFBhcmVudENvbW1hbmRMaW5lOiBDOlxXSU5ET1dTXHN5c3RlbTMyXHN2Y2hvc3QuZXhlIC1rIERjb21MYXVuY2ggLXA="                },                "7": {                    "type": "file",                    "hashes": {                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"                    }                },                "8": {                    "name": "wsmprovhost.exe",                    "type": "file",                    "parent_directory_ref": "9"                },                "9": {                    "path": "C:\\Windows\\SysWOW64",                    "type": "directory"                },                "10": {                    "name": "svchost.exe",                    "type": "file",                    "parent_directory_ref": "11"                },                "11": {                    "path": "C:\\Windows\\System32",                    "type": "directory"                },                "12": {                    "pid": 1164,                    "type": "process",                    "binary_ref": "10",                    "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"                },                "13": {                    "type": "domain-name",                    "value": "frank-adams-pc.baneandox.com"                },                "14": {                    "type": "ipv4-addr",                    "value": "172.20.18.20",                    "resolves_to_refs": [                        "15"                    ]                },                "15": {                    "type": "domain-name",                    "value": "sales-database.baneandox.com"                },                "16": {                    "type": "x-ibm-finding",                    "severity": 100,                    "name": "Remote PowerShell Session Host Process (WinRM)",                    "ttp_tagging_refs": [                        "17",                        "19"                    ]                },                "17": {                    "type": "x-ibm-ttp-tagging",                    "extensions": {                        "mitre-attack-ext": {                            "tactic_name": "LateralMovement"                        }                    },                    "kill_chain_phases": [                        "18"                    ]                },                "18": {                    "type": "kill-chain-phase",                    "phase_name": "LateralMovement"                },                "19": {                    "type": "x-ibm-ttp-tagging",                    "extensions": {                        "mitre-attack-ext": {                            "technique_name": "Windows Remote Management (T1021.006)"                        }                    }                }            },            "modified": "2024-01-04T12:17:10.940Z",            "last_observed": "2024-01-04T12:17:10.940Z",            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",            "first_observed": "2024-01-04T12:17:10.940Z",            "number_observed": 1        },        {            "id": "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c",            "type": "observed-data",            "created": "2024-01-04T12:20:03.830Z",            "objects": {                "0": {                    "type": "user-account",                    "user_id": "frank-adams@baneandox.com"                },                "1": {                    "type": "ipv4-addr",                    "value": "172.20.18.20"                },                "2": {                    "type": "network-traffic",                    "dst_ref": "1",                    "src_ref": "3",                    "dst_port": 3306,                    "src_port": 44494,                    "protocols": [                        "tcp",                        "ipv4"                    ]                },                "3": {                    "type": "ipv4-addr",                    "value": "10.10.20.10"                },                "4": {                    "type": "x-ibm-finding",                    "severity": 100,                    "name": "Abnormal queries to cloud data store",                    "ttp_tagging_refs": [                        "5",                        "7"                    ]                },                "5": {                    "type": "x-ibm-ttp-tagging",                    "extensions": {                        "mitre-attack-ext": {                            "tactic_name": "Collection"                        }                    },                    "kill_chain_phases": [                        "6"                    ]                },                "6": {                    "type": "kill-chain-phase",                    "phase_name": "Collection"                },                "7": {                    "type": "x-ibm-ttp-tagging",                    "extensions": {                        "mitre-attack-ext": {                            "technique_name": "Data from Cloud Storage Object (T1530)"                        }                    }                }            },            "modified": "2024-01-04T12:20:03.830Z",            "last_observed": "2024-01-04T12:20:03.830Z",            "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",            "first_observed": "2024-01-04T12:20:03.830Z",            "x_com_guardium": {                "db_user": "frank-adams@baneandox.com",                "new_outlier": "false",                "service_name": "172.20.18.20:5.6.27",                "temp_outlier": "false",                "anomaly_score": 100,                "error_outlier": "false",                "source_program": "MYSQL CLIENT",                "high_volume_outlier": "true"            },            "number_observed": 1        },        {            "id": "observed-data--89543845-acd4-8f746cbedce2",            "type": "observed-data",            "created": "2024-01-04T12:21:11.750Z",            "objects": {                "0": {                    "code": 1,                    "type": "x-oca-event",                    "agent": "SecurityComplianceCenter",                    "action": "Data Transfer",                    "nt_ref": "2",                    "created": "2024-01-04T12:21:11.750Z",                    "outcome": "Success",                    "category": [                        "ThreatManagement"                    ],                    "host_ref": "3",                    "provider": "SecurityComplianceCenter",                    "user_ref": "4"                },                "1": {                    "type": "ipv4-addr",                    "value": "172.20.18.20",                    "resolves_to_refs": [                        "5"                    ]                },                "2": {                    "type": "network-traffic",                    "dst_ref": "6",                    "src_ref": "1",                    "dst_port": 443,                    "src_port": 127690,                    "protocols": [                        "tcp"                    ]                },                "3": {                    "type": "x-oca-asset",                    "ip_refs": [                        "1"                    ],                    "hostname": "sales-database.baneandox.com",                    "host_id": "903daa5f5b044309a3587ae40c8fe077"                },                "4": {                    "type": "user-account",                    "user_id": "frank-adams@baneandox.com"                },                "5": {                    "type": "domain-name",                    "value": "sales-database.baneandox.com"                },                "6": {                    "type": "ipv4-addr",                    "value": "128.210.157.251"                },                "7": {                    "type": "x-ibm-finding",                    "severity": 100,                    "name": "Data Exfiltration to Unsanctioned Apps",                    "ttp_tagging_refs": [                        "8",                        "10"                    ]                },                "8": {                    "type": "x-ibm-ttp-tagging",                    "extensions": {                        "mitre-attack-ext": {                            "tactic_name": "Exfiltration"                        }                    },                    "kill_chain_phases": [                        "9"                    ]                },                "9": {                    "type": "kill-chain-phase",                    "phase_name": "Exfiltration"                },                "10": {                    "type": "x-ibm-ttp-tagging",                    "extensions": {                        "mitre-attack-ext": {                            "technique_name": "Transfer Data to Cloud Account (T1537)"                        }                    }                }            },            "modified": "2024-01-04T12:21:11.750Z",            "last_observed": "2024-01-04T12:21:11.750Z",            "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",            "first_observed": "2024-01-04T12:21:11.750Z",            "number_observed": 1        }    ]}
+{
+    "type": "bundle",
+    "id": "bundle--281fe97a-35d8-4b84-be2e-253047cc6274",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+            "name": "shifter_proxy",
+            "identity_class": "events",
+            "created": "2024-01-04T13:01:38.295Z",
+            "modified": "2024-01-04T13:01:38.295Z"
+        },
+        {
+            "id": "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b",
+            "type": "observed-data",
+            "created": "2024-01-04T12:13:20.874Z",
+            "objects": {
+                "0": {
+                    "id": "CIDD706957",
+                    "type": "x-mss-customer"
+                },
+                "1": {
+                    "id": "PR0000000037382",
+                    "ip": "198.23.124.4",
+                    "name": "bao-us-pa1",
+                    "type": "x-mss-device",
+                    "vendor": "49",
+                    "version": "Palo Jan 04.1.8"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "6",
+                    "src_ref": "5",
+                    "dst_port": 80,
+                    "src_port": 49888,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "artifact",
+                    "payload_bin": "RGVjIDEyIDEyOjEzOjEzIDEwLjEwLjIwLjEgIDEsMjAyMy8xMi8xMiAxMjoxMzoxMiwwMDc5NTEwMDAwMzU1OTIsVFJBRkZJQyxlbmQsMjMxMCwyMDIzLzEyLzEyIDEyOjEzOjEyLDEwLjEwLjIwLjIwLDEyOC4yMTAuMTU3LjI1MSwwLjAuMC4wLDAuMC4wLjAsUEEtdG8tQ1AtcW94LCwsd2ViLWJyb3dzaW5nLHZzeXMxLFByaXZhdGUsVlBOLGV0aGVybmV0MS8yLHR1bm5lbC4yLE1TUyBMb2cgRm9yd2FyZGluZywyMDIzLzEyLzEyIDEyOjI0OjEyLDIxMzM1MCwxLDQ5ODg4LDgwLDAsMCwweDcwLHRjcCxhbGxvdywzNTMyLDc1NCwyNzc4LDE0LDIwMjMvMTIvMTIgMTI6MjQ6MDAsMCxwcml2YXRlLWlwLWFkZHJlc3NlcywwLDgyNTY5NDgzMTksMHgwLDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDAsNyw3LHRjcC1maW4sMCwwLDAsMCwseGZyLXVzLXBhMSxmcm9tLXBvbGljeSwsLDAsLDAsLE4vQSwwLDAsMCwwLGQ0YzM0ZmRlLWU5MDctNDU4Ny1iMmU3LTc4ZjA2YjIxMGQzYywwLDAsLCwsLCws"
+                },
+                "4": {
+                    "type": "x-oca-event",
+                    "action": "ACCEPT",
+                    "ip_refs": [
+                        "5",
+                        "6"
+                    ],
+                    "host_ref": "7",
+                    "network_ref": "2",
+                    "original_ref": "3"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.20"
+                },
+                "6": {
+                    "type": "ipv4-addr",
+                    "value": "128.210.157.251"
+                },
+                "7": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "5"
+                    ]
+                }
+            },
+            "modified": "2024-01-04T12:13:20.874Z",
+            "last_observed": "2024-01-04T12:13:20.874Z",
+            "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
+            "first_observed": "2024-01-04T12:13:20.874Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2024-01-04T12:15:55.950Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ jason-flood-pc",
+                    "action": "Process Create",
+                    "created": "2024-01-04T12:15:55.950Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "6",
+                    "host_ref": "2",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "3",
+                    "process_ref": "4",
+                    "original_ref": "5",
+                    "parent_process_ref": "11"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.20",
+                    "resolves_to_refs": [
+                        "12"
+                    ]
+                },
+                "2": {
+                    "type": "x-oca-asset",
+                    "hostname": "jason-flood-pc.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "3": {
+                    "type": "user-account",
+                    "user_id": "jason-flood@baneandox.com"
+                },
+                "4": {
+                    "pid": 26326,
+                    "name": "net.exe",
+                    "type": "process",
+                    "binary_ref": "7",
+                    "parent_ref": "11",
+                    "command_line": "\"C:\\WINDOWS\\SysWOW64\net.exe\" view",
+                    "creator_user_ref": "3"
+                },
+                "5": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkRlYyAxMiAxMjoxNTo0OCBqYXNvbi1mbG9vZC1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9amFzb24tZmxvb2QtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9NjE2NTUxNjY5NDggVGltZVdyaXR0ZW49NjE2NTYyMDM3NDggTGV2ZWw9SW5mb3JtYXRpb25hbCBLZXl3b3Jkcz0weDgwMDAwMDAwMDAwMDAwMDAgVGFzaz1TeXNtb25UYXNrLVNZU01PTl9DUkVBVEVfUFJPQ0VTUyAgIE9wY29kZT1JbmZvIE1lc3NhZ2U9UHJvY2VzcyBDcmVhdGU6IFJ1bGVOYW1lOiAtIFV0Y1RpbWU6IDIwMjMtMTItMTIgMTI6MTU6NDYuMTE3IFByb2Nlc3NHdWlkOiB7MjUzYWNmNjctM2E2Ni02MDAwLTZmNzAtMDEwMDAwMDAwYjAwfSBQcm9jZXNzSWQ6IDI2MzI0IEltYWdlOiBDOlxXaW5kb3dzXFN5c1dPVzY0XG5ldC5leGUgRmlsZVZlcnNpb246IDEwLjAuMTkwNDEuNTQ2IChXaW5CdWlsZC4xNjAxMDEuMDgwMCkgRGVzY3JpcHRpb246IENPTSBTdXJyb2dhdGUgUHJvZHVjdDogTWljcm9zb2Z01YLVpNWJwoDCuyBXaW5kb3dz1YLVpNWJwoDCuyBPcGVyYXRpbmcgU3lzdGVtIENvbXBhbnk6IE1pY3Jvc29mdCBDb3Jwb3JhdGlvbiBPcmlnaW5hbEZpbGVOYW1lOiBuZXQuZXhlIENvbW1hbmRMaW5lOiAiQzpcV0lORE9XU1xTeXNXT1c2NFxuZXQuZXhlIHZpZXciIEN1cnJlbnREaXJlY3Rvcnk6IEM6XFdJTkRPV1Ncc3lzdGVtMzJcIFVzZXI6IEF6dXJlQURcUy0xLTUtOCBMb2dvbkd1aWQ6IHsyNTNhY2Y2Ny0zNWQ4LTVmZTgtMzRhYy02MjE4MDAwMDAwMDB9IExvZ29uSWQ6IDB4MTg2MkFDMzQgVGVybWluYWxTZXNzaW9uSWQ6IDIgSW50ZWdyaXR5TGV2ZWw6IE1lZGl1bSBIYXNoZXM6IE1ENT0zRjNDOTQ4NUY4Rjk3QUMwNEM4RTQzRUY0NDYzQTY4RCxTSEEyNTY9M0VENjlDQUFCMDM1MjU4RTAwOEVGQkNGNDBEQjMwNTg5MUI0MEJBMDJDQTI3MzdFMjBERUZBN0MyRDRBRkFGNyxJTVBIQVNIPUI2QTZDNTI0N0VGQkQyNjEwRTNERUE0NDY0OUQ3MDQxIFBhcmVudFByb2Nlc3NHdWlkOiB7MjUzYWNmNjctMjA1OS01ZmU1LTBmMDAtMDAwMDAwMDAwYjAwfSBQYXJlbnRQcm9jZXNzSWQ6IDExNjQgUGFyZW50SW1hZ2U6IEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUgUGFyZW50Q29tbWFuZExpbmU6IEM6XFdJTkRPV1Ncc3lzdGVtMzJcc3ZjaG9zdC5leGUgLWsgRGNvbUxhdW5jaCAtcA=="
+                },
+                "6": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "3F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "7": {
+                    "name": "net.exe",
+                    "type": "file",
+                    "parent_directory_ref": "8"
+                },
+                "8": {
+                    "path": "C:\\Windows\\SysWOW64",
+                    "type": "directory"
+                },
+                "9": {
+                    "name": "svchost.exe",
+                    "type": "file",
+                    "parent_directory_ref": "10"
+                },
+                "10": {
+                    "path": "C:\\Windows\\System32",
+                    "type": "directory"
+                },
+                "11": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "9",
+                    "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+                },
+                "12": {
+                    "type": "domain-name",
+                    "value": "jason-flood-pc.baneandox.com"
+                },
+                "13": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "Windows Network Enumeration",
+                    "ttp_tagging_refs": [
+                        "14",
+                        "16"
+                    ]
+                },
+                "14": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Discovery"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "15"
+                    ]
+                },
+                "15": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Discovery"
+                },
+                "16": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "Remote System Discovery (T1018)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:15:55.950Z",
+            "last_observed": "2024-01-04T12:15:55.950Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2024-01-04T12:15:55.950Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2024-01-04T12:17:10.940Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ jason-flood-pc",
+                    "action": "Process Create",
+                    "nt_ref": "2",
+                    "created": "2024-01-04T12:17:10.940Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "7",
+                    "host_ref": "3",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "4",
+                    "process_ref": "5",
+                    "original_ref": "6",
+                    "parent_process_ref": "12"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.25",
+                    "resolves_to_refs": [
+                        "13"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "14",
+                    "src_ref": "1",
+                    "dst_port": 5985,
+                    "src_port": 23178,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "hostname": "jason-flood-pc.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "jason-flood@baneandox.com"
+                },
+                "5": {
+                    "pid": 26329,
+                    "name": "ps1.exe",
+                    "type": "process",
+                    "binary_ref": "8",
+                    "parent_ref": "12",
+                    "command_line": "\"C:\\Windows\\system32\\ps1.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\hszuw.exe\" ",
+                    "creator_user_ref": "4"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAwNCAxNjoyNzoxOSAxMC4xMC4yMC4yMCBBZ2VudERldmljZT1XaW5kb3dzTG9nCUFnZW50TG9nRmlsZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWwJUGx1Z2luVmVyc2lvbj1XQy5NU0VWRU42LjEwLjAuMC4xMTUJU291cmNlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbglDb21wdXRlcj1KYXNvbi1GbG9vZC1QQwlPcmlnaW5hdGluZ0NvbXB1dGVyPUphc29uLUZsb29kLVBDCVVzZXI9U1lTVEVNCURvbWFpbj1OVCBBVVRIT1JJVFkJRXZlbnRJRD0yMwlFdmVudElEQ29kZT0yMwlFdmVudFR5cGU9NAlFdmVudENhdGVnb3J5PTIzCVJlY29yZE51bWJlcj0xNDQ3NjIJVGltZUdlbmVyYXRlZD0xNTk3OTk1NTc1CVRpbWVXcml0dGVuPTE1OTc5OTU1NzUJTGV2ZWw9SW5mb3JtYXRpb25hbAlLZXl3b3Jkcz0wCVRhc2s9U3lzbW9uVGFzay1TWVNNT05fRklMRV9DUkVBVEUJT3Bjb2RlPUluZm8JTWVzc2FnZT1GaWxlIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyNC0wMS0wNCAxNjoyNzoxOS4xNTkgUHJvY2Vzc0d1aWQ6IHs3M2JmYWE3ZC03YTI3LTVmM2YtNWQwNi0wMDAwMDAwMGFlMDB9IFByb2Nlc3NJZDogMzA2NCBVc2VyOiBKb2huLUNsYXJrZS1QQ1xBZG1pbmlzdHJhdG9yIEltYWdlOiBDOlxXaW5kb3dzXHN5c3RlbTMyXHBzMS5leGUgVGFyZ2V0RmlsZW5hbWU6IEM6XFVzZXJzXEFETUlOSX4xXEFwcERhdGFcTG9jYWxcVGVtcFxDNTIxMTE4OS04QzRDLTRDQzUtQUVEMy02ODU0ODM4OUYzQUVcaHN6dXcuZXhlIEhhc2hlczogTUQ1PTcxZDVlZTc1NzY2NDk3ZTJjMzdiMjA1MDNjZjAyZjUzLFNIQTI1Nj0xM2ExZmJiOWMzMDNmMjc4OWYyZDJkNTVlNmI5MTVmNGQ3MzFiNzBmMGVhNmI0NDUzMzY0Y2Q2NWY5Y2ZhOGQ2LElNUEhBU0g9YzdhMDMwOWQ0NWZkMDA3YzJjZTI2OGI3MjE4ZTA3NWMgSXNFeGVjdXRhYmxlOiB0cnVlIEFyY2hpdmVkOiBmYWxzZQ=="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "8": {
+                    "name": "ps1.exe",
+                    "type": "file",
+                    "parent_directory_ref": "9"
+                },
+                "9": {
+                    "path": "C:\\Windows\\system32",
+                    "type": "directory"
+                },
+                "10": {
+                    "name": "hszuw.exe",
+                    "type": "file",
+                    "parent_directory_ref": "11"
+                },
+                "11": {
+                    "path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\",
+                    "type": "directory"
+                },
+                "12": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "10",
+                    "command_line": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\hszuw.exe"
+                },
+                "13": {
+                    "type": "domain-name",
+                    "value": "jason-flood-pc.baneandox.com"
+                },
+                "14": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "File Execution",
+                    "ttp_tagging_refs": [
+                        "15",
+                        "17"
+                    ]
+                },
+                "15": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Execution"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "16"
+                    ]
+                },
+                "16": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Execution"
+                },
+                "17": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "User Execution: Malicious File (T1204.002)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:17:10.940Z",
+            "last_observed": "2024-01-04T12:17:10.940Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2024-01-04T12:17:10.940Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2024-01-04T12:17:10.940Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ john-clarke-pc",
+                    "action": "Process Create",
+                    "nt_ref": "2",
+                    "created": "2024-01-04T12:17:10.940Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "7",
+                    "host_ref": "3",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "4",
+                    "process_ref": "5",
+                    "original_ref": "6",
+                    "parent_process_ref": "12"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.25",
+                    "resolves_to_refs": [
+                        "13"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "14",
+                    "src_ref": "1",
+                    "dst_port": 5985,
+                    "src_port": 23178,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "hostname": "john-clarke-pc.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "john-clarke@baneandox.com"
+                },
+                "5": {
+                    "pid": 26329,
+                    "name": "ps1.exe",
+                    "type": "process",
+                    "binary_ref": "8",
+                    "parent_ref": "12",
+                    "command_line": "\"C:\\Windows\\system32\\ps1.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\hszuw.exe\" ",
+                    "creator_user_ref": "4"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAwNCAxNjoyNzoxOSAxMC4xMC4yMC4yNSBBZ2VudERldmljZT1XaW5kb3dzTG9nCUFnZW50TG9nRmlsZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWwJUGx1Z2luVmVyc2lvbj1XQy5NU0VWRU42LjEwLjAuMC4xMTUJU291cmNlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbglDb21wdXRlcj1Kb2huLUNsYXJrZS1QQwlPcmlnaW5hdGluZ0NvbXB1dGVyPUpvaG4tQ2xhcmtlLVBDCVVzZXI9U1lTVEVNCURvbWFpbj1OVCBBVVRIT1JJVFkJRXZlbnRJRD0yMwlFdmVudElEQ29kZT0yMwlFdmVudFR5cGU9NAlFdmVudENhdGVnb3J5PTIzCVJlY29yZE51bWJlcj0xNDQ3NjIJVGltZUdlbmVyYXRlZD0xNTk3OTk1NTc1CVRpbWVXcml0dGVuPTE1OTc5OTU1NzUJTGV2ZWw9SW5mb3JtYXRpb25hbAlLZXl3b3Jkcz0wCVRhc2s9U3lzbW9uVGFzay1TWVNNT05fRklMRV9DUkVBVEUJT3Bjb2RlPUluZm8JTWVzc2FnZT1GaWxlIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyNC0wMS0wNCAxNjoyNzoxOS4xNTkgUHJvY2Vzc0d1aWQ6IHs3M2JmYWE3ZC03YTI3LTVmM2YtNWQwNi0wMDAwMDAwMGFlMDB9IFByb2Nlc3NJZDogMzA2NCBVc2VyOiBKb2huLUNsYXJrZS1QQ1xBZG1pbmlzdHJhdG9yIEltYWdlOiBDOlxXaW5kb3dzXHN5c3RlbTMyXHBzMS5leGUgVGFyZ2V0RmlsZW5hbWU6IEM6XFVzZXJzXEFETUlOSX4xXEFwcERhdGFcTG9jYWxcVGVtcFxDNTIxMTE4OS04QzRDLTRDQzUtQUVEMy02ODU0ODM4OUYzQUVcaHN6dXcuZXhlIEhhc2hlczogTUQ1PTcxZDVlZTc1NzY2NDk3ZTJjMzdiMjA1MDNjZjAyZjUzLFNIQTI1Nj0xM2ExZmJiOWMzMDNmMjc4OWYyZDJkNTVlNmI5MTVmNGQ3MzFiNzBmMGVhNmI0NDUzMzY0Y2Q2NWY5Y2ZhOGQ2LElNUEhBU0g9YzdhMDMwOWQ0NWZkMDA3YzJjZTI2OGI3MjE4ZTA3NWMgSXNFeGVjdXRhYmxlOiB0cnVlIEFyY2hpdmVkOiBmYWxzZQ="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "8": {
+                    "name": "ps1.exe",
+                    "type": "file",
+                    "parent_directory_ref": "9"
+                },
+                "9": {
+                    "path": "C:\\Windows\\system32",
+                    "type": "directory"
+                },
+                "10": {
+                    "name": "hszuw.exe",
+                    "type": "file",
+                    "parent_directory_ref": "11"
+                },
+                "11": {
+                    "path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\",
+                    "type": "directory"
+                },
+                "12": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "10",
+                    "command_line": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\hszuw.exe"
+                },
+                "13": {
+                    "type": "domain-name",
+                    "value": "john-clarke-pc.baneandox.com"
+                },
+                "14": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "File Execution",
+                    "ttp_tagging_refs": [
+                        "15",
+                        "17"
+                    ]
+                },
+                "15": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Execution"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "16"
+                    ]
+                },
+                "16": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Execution"
+                },
+                "17": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "User Execution: Malicious File (T1204.002)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:17:10.940Z",
+            "last_observed": "2024-01-04T12:17:10.940Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2024-01-04T12:17:10.940Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2024-01-04T12:17:10.940Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ adam-franks-pc",
+                    "action": "Process Create",
+                    "nt_ref": "2",
+                    "created": "2024-01-04T12:17:10.940Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "7",
+                    "host_ref": "3",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "4",
+                    "process_ref": "5",
+                    "original_ref": "6",
+                    "parent_process_ref": "12"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.25",
+                    "resolves_to_refs": [
+                        "13"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "14",
+                    "src_ref": "1",
+                    "dst_port": 5985,
+                    "src_port": 23178,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "hostname": "adam-franks-pc.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "adam-franks@baneandox.com"
+                },
+                "5": {
+                    "pid": 26329,
+                    "name": "ps1.exe",
+                    "type": "process",
+                    "binary_ref": "8",
+                    "parent_ref": "12",
+                    "command_line": "\"C:\\Windows\\system32\\ps1.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\hszuw.exe\" ",
+                    "creator_user_ref": "4"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAwNCAxNjoyNzoxOSAxMC4xMC4yMC4zMCBBZ2VudERldmljZT1XaW5kb3dzTG9nCUFnZW50TG9nRmlsZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWwJUGx1Z2luVmVyc2lvbj1XQy5NU0VWRU42LjEwLjAuMC4xMTUJU291cmNlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbglDb21wdXRlcj1BZGFtLUZyYW5rcy1QQwlPcmlnaW5hdGluZ0NvbXB1dGVyPUFkYW0tRnJhbmtzLVBDCVVzZXI9U1lTVEVNCURvbWFpbj1OVCBBVVRIT1JJVFkJRXZlbnRJRD0yMwlFdmVudElEQ29kZT0yMwlFdmVudFR5cGU9NAlFdmVudENhdGVnb3J5PTIzCVJlY29yZE51bWJlcj0xNDQ3NjIJVGltZUdlbmVyYXRlZD0xNTk3OTk1NTc1CVRpbWVXcml0dGVuPTE1OTc5OTU1NzUJTGV2ZWw9SW5mb3JtYXRpb25hbAlLZXl3b3Jkcz0wCVRhc2s9U3lzbW9uVGFzay1TWVNNT05fRklMRV9DUkVBVEUJT3Bjb2RlPUluZm8JTWVzc2FnZT1GaWxlIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyNC0wMS0wNCAxNjoyNzoxOS4xNTkgUHJvY2Vzc0d1aWQ6IHs3M2JmYWE3ZC03YTI3LTVmM2YtNWQwNi0wMDAwMDAwMGFlMDB9IFByb2Nlc3NJZDogMzA2NCBVc2VyOiBKb2huLUNsYXJrZS1QQ1xBZG1pbmlzdHJhdG9yIEltYWdlOiBDOlxXaW5kb3dzXHN5c3RlbTMyXHBzMS5leGUgVGFyZ2V0RmlsZW5hbWU6IEM6XFVzZXJzXEFETUlOSX4xXEFwcERhdGFcTG9jYWxcVGVtcFxDNTIxMTE4OS04QzRDLTRDQzUtQUVEMy02ODU0ODM4OUYzQUVcaHN6dXcuZXhlIEhhc2hlczogTUQ1PTcxZDVlZTc1NzY2NDk3ZTJjMzdiMjA1MDNjZjAyZjUzLFNIQTI1Nj0xM2ExZmJiOWMzMDNmMjc4OWYyZDJkNTVlNmI5MTVmNGQ3MzFiNzBmMGVhNmI0NDUzMzY0Y2Q2NWY5Y2ZhOGQ2LElNUEhBU0g9YzdhMDMwOWQ0NWZkMDA3YzJjZTI2OGI3MjE4ZTA3NWMgSXNFeGVjdXRhYmxlOiB0cnVlIEFyY2hpdmVkOiBmYWxzZQ=="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "8": {
+                    "name": "ps1.exe",
+                    "type": "file",
+                    "parent_directory_ref": "9"
+                },
+                "9": {
+                    "path": "C:\\Windows\\system32",
+                    "type": "directory"
+                },
+                "10": {
+                    "name": "hszuw.exe",
+                    "type": "file",
+                    "parent_directory_ref": "11"
+                },
+                "11": {
+                    "path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\",
+                    "type": "directory"
+                },
+                "12": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "10",
+                    "command_line": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\hszuw.exe"
+                },
+                "13": {
+                    "type": "domain-name",
+                    "value": "adam-franks-pc.baneandox.com"
+                },
+                "14": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "File Execution",
+                    "ttp_tagging_refs": [
+                        "15",
+                        "17"
+                    ]
+                },
+                "15": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Execution"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "16"
+                    ]
+                },
+                "16": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Execution"
+                },
+                "17": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "User Execution: Malicious File (T1204.002)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:17:10.940Z",
+            "last_observed": "2024-01-04T12:17:10.940Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2024-01-04T12:17:10.940Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2024-01-04T12:17:10.940Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ frank-adams-pc",
+                    "action": "Process Create",
+                    "nt_ref": "2",
+                    "created": "2024-01-04T12:17:10.940Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "7",
+                    "host_ref": "3",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "4",
+                    "process_ref": "5",
+                    "original_ref": "6",
+                    "parent_process_ref": "12"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.25",
+                    "resolves_to_refs": [
+                        "13"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "14",
+                    "src_ref": "1",
+                    "dst_port": 5985,
+                    "src_port": 23178,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "hostname": "frank-adams-pc.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "frank-adams@baneandox.com"
+                },
+                "5": {
+                    "pid": 26329,
+                    "name": "ps1.exe",
+                    "type": "process",
+                    "binary_ref": "8",
+                    "parent_ref": "12",
+                    "command_line": "\"C:\\Windows\\system32\\ps1.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\hszuw.exe\" ",
+                    "creator_user_ref": "4"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAwNCAxNjoyNzoxOSAxMC4xMC4yMC4xMCBBZ2VudERldmljZT1XaW5kb3dzTG9nCUFnZW50TG9nRmlsZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWwJUGx1Z2luVmVyc2lvbj1XQy5NU0VWRU42LjEwLjAuMC4xMTUJU291cmNlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbglDb21wdXRlcj1GcmFua3MtQWRhbXMtUEMJT3JpZ2luYXRpbmdDb21wdXRlcj1GcmFuay1BZGFtcy1QQwlVc2VyPVNZU1RFTQlEb21haW49TlQgQVVUSE9SSVRZCUV2ZW50SUQ9MjMJRXZlbnRJRENvZGU9MjMJRXZlbnRUeXBlPTQJRXZlbnRDYXRlZ29yeT0yMwlSZWNvcmROdW1iZXI9MTQ0NzYyCVRpbWVHZW5lcmF0ZWQ9MTU5Nzk5NTU3NQlUaW1lV3JpdHRlbj0xNTk3OTk1NTc1CUxldmVsPUluZm9ybWF0aW9uYWwJS2V5d29yZHM9MAlUYXNrPVN5c21vblRhc2stU1lTTU9OX0ZJTEVfQ1JFQVRFCU9wY29kZT1JbmZvCU1lc3NhZ2U9RmlsZSBDcmVhdGU6IFJ1bGVOYW1lOiAtIFV0Y1RpbWU6IDIwMjQtMDEtMDQgMTY6Mjc6MTkuMTU5IFByb2Nlc3NHdWlkOiB7NzNiZmFhN2QtN2EyNy01ZjNmLTVkMDYtMDAwMDAwMDBhZTAwfSBQcm9jZXNzSWQ6IDMwNjQgVXNlcjogSm9obi1DbGFya2UtUENcQWRtaW5pc3RyYXRvciBJbWFnZTogQzpcV2luZG93c1xzeXN0ZW0zMlxwczEuZXhlIFRhcmdldEZpbGVuYW1lOiBDOlxVc2Vyc1xBRE1JTkl+MVxBcHBEYXRhXExvY2FsXFRlbXBcQzUyMTExODktOEM0Qy00Q0M1LUFFRDMtNjg1NDgzODlGM0FFXGhzenV3LmV4ZSBIYXNoZXM6IE1ENT03MWQ1ZWU3NTc2NjQ5N2UyYzM3YjIwNTAzY2YwMmY1MyxTSEEyNTY9MTNhMWZiYjljMzAzZjI3ODlmMmQyZDU1ZTZiOTE1ZjRkNzMxYjcwZjBlYTZiNDQ1MzM2NGNkNjVmOWNmYThkNixJTVBIQVNIPWM3YTAzMDlkNDVmZDAwN2MyY2UyNjhiNzIxOGUwNzVjIElzRXhlY3V0YWJsZTogdHJ1ZSBBcmNoaXZlZDogZmFsc2U="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "8": {
+                    "name": "ps1.exe",
+                    "type": "file",
+                    "parent_directory_ref": "9"
+                },
+                "9": {
+                    "path": "C:\\Windows\\system32",
+                    "type": "directory"
+                },
+                "10": {
+                    "name": "hszuw.exe",
+                    "type": "file",
+                    "parent_directory_ref": "11"
+                },
+                "11": {
+                    "path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\",
+                    "type": "directory"
+                },
+                "12": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "10",
+                    "command_line": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\hszuw.exe"
+                },
+                "13": {
+                    "type": "domain-name",
+                    "value": "frank-adams-pc.baneandox.com"
+                },
+                "14": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "File Execution",
+                    "ttp_tagging_refs": [
+                        "15",
+                        "17"
+                    ]
+                },
+                "15": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Execution"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "16"
+                    ]
+                },
+                "16": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Execution"
+                },
+                "17": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "User Execution: Malicious File (T1204.002)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:17:10.940Z",
+            "last_observed": "2024-01-04T12:17:10.940Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2024-01-04T12:17:10.940Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2024-01-04T12:17:10.940Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ robert-dibattista-pc",
+                    "action": "Process Create",
+                    "nt_ref": "2",
+                    "created": "2024-01-04T12:17:10.940Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "7",
+                    "host_ref": "3",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "4",
+                    "process_ref": "5",
+                    "original_ref": "6",
+                    "parent_process_ref": "12"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.25",
+                    "resolves_to_refs": [
+                        "13"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "14",
+                    "src_ref": "1",
+                    "dst_port": 5985,
+                    "src_port": 23178,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "hostname": "robert-dibattista-pc.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "robert-dibattista@baneandox.com"
+                },
+                "5": {
+                    "pid": 26329,
+                    "name": "net.exe",
+                    "type": "process",
+                    "binary_ref": "8",
+                    "parent_ref": "12",
+                    "command_line": "\"C:\\Windows\\system32\net.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\net1.exe\" ",
+                    "creator_user_ref": "4"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAwNCAxNjoyNzoxOSAxMC4xMC4yMC40MCBBZ2VudERldmljZT1XaW5kb3dzTG9nCUFnZW50TG9nRmlsZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWwJUGx1Z2luVmVyc2lvbj1XQy5NU0VWRU42LjEwLjAuMC4xMTUJU291cmNlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbglDb21wdXRlcj1Sb2JlcnQtRGlCYXR0aXN0YS1QQwlPcmlnaW5hdGluZ0NvbXB1dGVyPVJvYmVydC1EaUJhdHRpc3RhLVBDCVVzZXI9U1lTVEVNCURvbWFpbj1OVCBBVVRIT1JJVFkJRXZlbnRJRD0yMwlFdmVudElEQ29kZT0yMwlFdmVudFR5cGU9NAlFdmVudENhdGVnb3J5PTIzCVJlY29yZE51bWJlcj0xNDQ3NjIJVGltZUdlbmVyYXRlZD0xNTk3OTk1NTc1CVRpbWVXcml0dGVuPTE1OTc5OTU1NzUJTGV2ZWw9SW5mb3JtYXRpb25hbAlLZXl3b3Jkcz0wCVRhc2s9U3lzbW9uVGFzay1TWVNNT05fRklMRV9DUkVBVEUJT3Bjb2RlPUluZm8JTWVzc2FnZT1GaWxlIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyNC0wMS0wNCAxNjoyNzoxOS4xNTkgUHJvY2Vzc0d1aWQ6IHs3M2JmYWE3ZC03YTI3LTVmM2YtNWQwNi0wMDAwMDAwMGFlMDB9IFByb2Nlc3NJZDogMzA2NCBVc2VyOiBSb2JlcnQtRGlCYXR0aXN0YS1QQ1xBZG1pbmlzdHJhdG9yIEltYWdlOiBDOlxXaW5kb3dzXHN5c3RlbTMyXG5ldC5leGUgVGFyZ2V0RmlsZW5hbWU6IEM6XFVzZXJzXEFETUlOSX4xXEFwcERhdGFcTG9jYWxcVGVtcFxDNTIxMTE4OS04QzRDLTRDQzUtQUVEMy02ODU0ODM4OUYzQUVcbmV0MS5leGUgSGFzaGVzOiBNRDU9ODU1NWIyMTMyNjBiYTVlZGE0YmYzNzY1MmNlY2I0MzEsU0hBMjU2PTc4MWJjNGRjYmQ0NTk4OTMzOTdhOGI5ODdiZjY5N2Y1Yjk1NDM1ZGZhZjdmZTNmNGQyMjI0NzI4ZTdhMjIwMmEsSU1QSEFTSD04YzhiYmMwMDNmODZiOTYyZTNkOTVjOTcyZTYzMTU4MCBJc0V4ZWN1dGFibGU6IHRydWUgQXJjaGl2ZWQ6IGZhbHNl="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "8": {
+                    "name": "net.exe",
+                    "type": "file",
+                    "parent_directory_ref": "9"
+                },
+                "9": {
+                    "path": "C:\\Windows\\system32",
+                    "type": "directory"
+                },
+                "10": {
+                    "name": "net1.exe",
+                    "type": "file",
+                    "parent_directory_ref": "11"
+                },
+                "11": {
+                    "path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\",
+                    "type": "directory"
+                },
+                "12": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "10",
+                    "command_line": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\net1.exe"
+                },
+                "13": {
+                    "type": "domain-name",
+                    "value": "robert-dibattista-pc.baneandox.com"
+                },
+                "14": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "File Execution",
+                    "ttp_tagging_refs": [
+                        "15",
+                        "17"
+                    ]
+                },
+                "15": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Execution"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "16"
+                    ]
+                },
+                "16": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Execution"
+                },
+                "17": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "User Execution: Malicious File (T1204.002)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:17:10.940Z",
+            "last_observed": "2024-01-04T12:17:10.940Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2024-01-04T12:17:10.940Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2024-01-04T12:17:10.940Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ sales-database",
+                    "action": "Process Create",
+                    "nt_ref": "2",
+                    "created": "2024-01-04T12:17:10.940Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "7",
+                    "host_ref": "3",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "4",
+                    "process_ref": "5",
+                    "original_ref": "6",
+                    "parent_process_ref": "12"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.25",
+                    "resolves_to_refs": [
+                        "13"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "14",
+                    "src_ref": "1",
+                    "dst_port": 5985,
+                    "src_port": 23178,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "hostname": "sales-database.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "system"
+                },
+                "5": {
+                    "pid": 26329,
+                    "name": "net.exe",
+                    "type": "process",
+                    "binary_ref": "8",
+                    "parent_ref": "12",
+                    "command_line": "\"C:\\Windows\\system32\net.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\net1.exe\" ",
+                    "creator_user_ref": "4"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAwNCAxNjoyNzoxOSAxNzIuMjAuMTguMjAgQWdlbnREZXZpY2U9V2luZG93c0xvZwlBZ2VudExvZ0ZpbGU9TWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uL09wZXJhdGlvbmFsCVBsdWdpblZlcnNpb249V0MuTVNFVkVONi4xMC4wLjAuMTE1CVNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24JQ29tcHV0ZXI9c2FsZXMtZGF0YWJhc2UJT3JpZ2luYXRpbmdDb21wdXRlcj1zYWxlcy1kYXRhYmFzZQlVc2VyPVNZU1RFTQlEb21haW49TlQgQVVUSE9SSVRZCUV2ZW50SUQ9MjMJRXZlbnRJRENvZGU9MjMJRXZlbnRUeXBlPTQJRXZlbnRDYXRlZ29yeT0yMwlSZWNvcmROdW1iZXI9MTQ0NzYyCVRpbWVHZW5lcmF0ZWQ9MTU5Nzk5NTU3NQlUaW1lV3JpdHRlbj0xNTk3OTk1NTc1CUxldmVsPUluZm9ybWF0aW9uYWwJS2V5d29yZHM9MAlUYXNrPVN5c21vblRhc2stU1lTTU9OX0ZJTEVfQ1JFQVRFCU9wY29kZT1JbmZvCU1lc3NhZ2U9RmlsZSBDcmVhdGU6IFJ1bGVOYW1lOiAtIFV0Y1RpbWU6IDIwMjQtMDEtMDQgMTY6Mjc6MTkuMTU5IFByb2Nlc3NHdWlkOiB7NzNiZmFhN2QtN2EyNy01ZjNmLTVkMDYtMDAwMDAwMDBhZTAwfSBQcm9jZXNzSWQ6IDMwNjQgVXNlcjogc2FsZXMtZGF0YWJhc2VcQWRtaW5pc3RyYXRvciBJbWFnZTogQzpcV2luZG93c1xzeXN0ZW0zMlxuZXQuZXhlIFRhcmdldEZpbGVuYW1lOiBDOlxVc2Vyc1xBRE1JTkl+MVxBcHBEYXRhXExvY2FsXFRlbXBcQzUyMTExODktOEM0Qy00Q0M1LUFFRDMtNjg1NDgzODlGM0FFXG5ldDEuZXhlIEhhc2hlczogTUQ1PTg1NTViMjEzMjYwYmE1ZWRhNGJmMzc2NTJjZWNiNDMxLFNIQTI1Nj03ODFiYzRkY2JkNDU5ODkzMzk3YThiOTg3YmY2OTdmNWI5NTQzNWRmYWY3ZmUzZjRkMjIyNDcyOGU3YTIyMDJhLElNUEhBU0g9OGM4YmJjMDAzZjg2Yjk2MmUzZDk1Yzk3MmU2MzE1ODAgSXNFeGVjdXRhYmxlOiB0cnVlIEFyY2hpdmVkOiBmYWxzZQ=="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "8": {
+                    "name": "net.exe",
+                    "type": "file",
+                    "parent_directory_ref": "9"
+                },
+                "9": {
+                    "path": "C:\\Windows\\system32",
+                    "type": "directory"
+                },
+                "10": {
+                    "name": "net1.exe",
+                    "type": "file",
+                    "parent_directory_ref": "11"
+                },
+                "11": {
+                    "path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\",
+                    "type": "directory"
+                },
+                "12": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "10",
+                    "command_line": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\net1.exe"
+                },
+                "13": {
+                    "type": "domain-name",
+                    "value": "sales-database.baneandox.com"
+                },
+                "14": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "File Execution",
+                    "ttp_tagging_refs": [
+                        "15",
+                        "17"
+                    ]
+                },
+                "15": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Execution"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "16"
+                    ]
+                },
+                "16": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Execution"
+                },
+                "17": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "User Execution: Malicious File (T1204.002)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:17:10.940Z",
+            "last_observed": "2024-01-04T12:17:10.940Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2024-01-04T12:17:10.940Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2024-01-04T12:17:10.940Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ user-database",
+                    "action": "Process Create",
+                    "nt_ref": "2",
+                    "created": "2024-01-04T12:17:10.940Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "7",
+                    "host_ref": "3",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "4",
+                    "process_ref": "5",
+                    "original_ref": "6",
+                    "parent_process_ref": "12"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.25",
+                    "resolves_to_refs": [
+                        "13"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "14",
+                    "src_ref": "1",
+                    "dst_port": 5985,
+                    "src_port": 23178,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "hostname": "user-database.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "system"
+                },
+                "5": {
+                    "pid": 26329,
+                    "name": "net.exe",
+                    "type": "process",
+                    "binary_ref": "8",
+                    "parent_ref": "12",
+                    "command_line": "\"C:\\Windows\\system32\net.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\net1.exe\" ",
+                    "creator_user_ref": "4"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAwNCAxNjoyNzoxOSAxNzIuMjAuMTguMjEgQWdlbnREZXZpY2U9V2luZG93c0xvZwlBZ2VudExvZ0ZpbGU9TWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uL09wZXJhdGlvbmFsCVBsdWdpblZlcnNpb249V0MuTVNFVkVONi4xMC4wLjAuMTE1CVNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24JQ29tcHV0ZXI9dXNlci1kYXRhYmFzZQlPcmlnaW5hdGluZ0NvbXB1dGVyPXVzZXItZGF0YWJhc2UJVXNlcj1TWVNURU0JRG9tYWluPU5UIEFVVEhPUklUWQlFdmVudElEPTIzCUV2ZW50SURDb2RlPTIzCUV2ZW50VHlwZT00CUV2ZW50Q2F0ZWdvcnk9MjMJUmVjb3JkTnVtYmVyPTE0NDc2MglUaW1lR2VuZXJhdGVkPTE1OTc5OTU1NzUJVGltZVdyaXR0ZW49MTU5Nzk5NTU3NQlMZXZlbD1JbmZvcm1hdGlvbmFsCUtleXdvcmRzPTAJVGFzaz1TeXNtb25UYXNrLVNZU01PTl9GSUxFX0NSRUFURQlPcGNvZGU9SW5mbwlNZXNzYWdlPUZpbGUgQ3JlYXRlOiBSdWxlTmFtZTogLSBVdGNUaW1lOiAyMDI0LTAxLTA0IDE2OjI3OjE5LjE1OSBQcm9jZXNzR3VpZDogezczYmZhYTdkLTdhMjctNWYzZi01ZDA2LTAwMDAwMDAwYWUwMH0gUHJvY2Vzc0lkOiAzMDY0IFVzZXI6IHVzZXItZGF0YWJhc2VcQWRtaW5pc3RyYXRvciBJbWFnZTogQzpcV2luZG93c1xzeXN0ZW0zMlxwczEuZXhlIFRhcmdldEZpbGVuYW1lOiBDOlxVc2Vyc1xBRE1JTkl+MVxBcHBEYXRhXExvY2FsXFRlbXBcQzUyMTExODktOEM0Qy00Q0M1LUFFRDMtNjg1NDgzODlGM0FFXG5ldDEuZXhlIEhhc2hlczogTUQ1PTg1NTViMjEzMjYwYmE1ZWRhNGJmMzc2NTJjZWNiNDMxLFNIQTI1Nj03ODFiYzRkY2JkNDU5ODkzMzk3YThiOTg3YmY2OTdmNWI5NTQzNWRmYWY3ZmUzZjRkMjIyNDcyOGU3YTIyMDJhLElNUEhBU0g9OGM4YmJjMDAzZjg2Yjk2MmUzZDk1Yzk3MmU2MzE1ODAgSXNFeGVjdXRhYmxlOiB0cnVlIEFyY2hpdmVkOiBmYWxzZQ=="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "8": {
+                    "name": "net.exe",
+                    "type": "file",
+                    "parent_directory_ref": "9"
+                },
+                "9": {
+                    "path": "C:\\Windows\\system32",
+                    "type": "directory"
+                },
+                "10": {
+                    "name": "net1.exe",
+                    "type": "file",
+                    "parent_directory_ref": "11"
+                },
+                "11": {
+                    "path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\",
+                    "type": "directory"
+                },
+                "12": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "10",
+                    "command_line": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\net1.exe"
+                },
+                "13": {
+                    "type": "domain-name",
+                    "value": "user-database.baneandox.com"
+                },
+                "14": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "File Execution",
+                    "ttp_tagging_refs": [
+                        "15",
+                        "17"
+                    ]
+                },
+                "15": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Execution"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "16"
+                    ]
+                },
+                "16": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Execution"
+                },
+                "17": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "User Execution: Malicious File (T1204.002)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:17:10.940Z",
+            "last_observed": "2024-01-04T12:17:10.940Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2024-01-04T12:17:10.940Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2024-01-04T12:17:10.940Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ jason-flood-pc",
+                    "action": "Process Create",
+                    "nt_ref": "2",
+                    "created": "2024-01-04T12:17:10.940Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "7",
+                    "host_ref": "3",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "4",
+                    "process_ref": "5",
+                    "original_ref": "6",
+                    "parent_process_ref": "12"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.20",
+                    "resolves_to_refs": [
+                        "13"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "14",
+                    "src_ref": "1",
+                    "dst_port": 5985,
+                    "src_port": 23178,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "hostname": "jason-flood-pc.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "jason-flood@baneandox.com"
+                },
+                "5": {
+                    "pid": 26329,
+                    "name": "wsmprovhost.exe",
+                    "type": "process",
+                    "binary_ref": "8",
+                    "parent_ref": "12",
+                    "command_line": "\"C:\\WINDOWS\\SysWOW64\\wsmprovhost.exe\" connect frank-adams-pc.baneandox.com",
+                    "creator_user_ref": "4"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkRlYyAxMiAxMjoxNzoxMiBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9NjE2NTUxNjcwMzIgIFRpbWVXcml0dGVuPTYxNjU1MTY3MDMyICBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMy0xMi0xMiAxMjoxNzoxMi4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTUueKApiBXaW5kb3dz1LnigKYgT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXGZyYW5rLWFkYW1zTG9nb25HdWlkOiB7MjUzYWNmNjctMzVkOC01ZmU4LTM0YWMtNjIxODAwMDAwMDAwfSBMb2dvbklkOiAweDE4NjJBQzM0IFRlcm1pbmFsU2Vzc2lvbklkOiAyIEludGVncml0eUxldmVsOiBNZWRpdW0gSGFzaGVzOiBNRDU9NkYzQzk0ODVGOEY5N0FDMDRDOEU0M0VGNDQ2M0E2OEMsU0hBMjU2PTNFRDY5Q0FBQjAzNTI1OEUwMDhFRkJDRjQwREIzMDU4OTFCNDBCQTAyQ0EyNzM3RTIwREVGQTdDMkQ0QUZBRjcsSU1QSEFTSD1CNkE2QzUyNDdFRkJEMjYxMEUzREVBNDQ2NDlENzA0MSBQYXJlbnRQcm9jZXNzR3VpZDogezI1M2FjZjY3LTIwNTktNWZlNS0wZjAwLTAwMDAwMDAwMGIwMH0gUGFyZW50UHJvY2Vzc0lkOiAxMTY0IFBhcmVudEltYWdlOiBDOlxXaW5kb3dzXFN5c3RlbTMyXHN2Y2hvc3QuZXhlIFBhcmVudENvbW1hbmRMaW5lOiBDOlxXSU5ET1dTXHN5c3RlbTMyXHN2Y2hvc3QuZXhlIC1rIERjb21MYXVuY2ggLXA="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "8": {
+                    "name": "wsmprovhost.exe",
+                    "type": "file",
+                    "parent_directory_ref": "9"
+                },
+                "9": {
+                    "path": "C:\\Windows\\SysWOW64",
+                    "type": "directory"
+                },
+                "10": {
+                    "name": "svchost.exe",
+                    "type": "file",
+                    "parent_directory_ref": "11"
+                },
+                "11": {
+                    "path": "C:\\Windows\\System32",
+                    "type": "directory"
+                },
+                "12": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "10",
+                    "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+                },
+                "13": {
+                    "type": "domain-name",
+                    "value": "jason-flood-pc.baneandox.com"
+                },
+                "14": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.18.20",
+                    "resolves_to_refs": [
+                        "15"
+                    ]
+                },
+                "15": {
+                    "type": "domain-name",
+                    "value": "frank-adams-pc.baneandox.com"
+                },
+                "16": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "Remote PowerShell Session Host Process (WinRM)",
+                    "ttp_tagging_refs": [
+                        "17",
+                        "19"
+                    ]
+                },
+                "17": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "LateralMovement"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "18"
+                    ]
+                },
+                "18": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "LateralMovement"
+                },
+                "19": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "Windows Remote Management (T1021.006)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:17:10.940Z",
+            "last_observed": "2024-01-04T12:17:10.940Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2024-01-04T12:17:10.940Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c",
+            "type": "observed-data",
+            "created": "2024-01-04T12:20:03.830Z",
+            "objects": {
+                "0": {
+                    "type": "user-account",
+                    "user_id": "jason-flood@baneandox.com"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.18.20"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "1",
+                    "src_ref": "3",
+                    "dst_port": 3306,
+                    "src_port": 44494,
+                    "protocols": [
+                        "tcp",
+                        "ipv4"
+                    ]
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.20"
+                },
+                "4": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "Abnormal queries to cloud data store",
+                    "ttp_tagging_refs": [
+                        "5",
+                        "7"
+                    ]
+                },
+                "5": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Collection"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Collection"
+                },
+                "7": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "Data from Cloud Storage Object (T1530)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:20:03.830Z",
+            "last_observed": "2024-01-04T12:20:03.830Z",
+            "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
+            "first_observed": "2024-01-04T12:20:03.830Z",
+            "x_com_guardium": {
+                "db_user": "jason-flood@baneandox.com",
+                "new_outlier": "false",
+                "service_name": "172.20.18.20:5.6.27",
+                "temp_outlier": "false",
+                "anomaly_score": 100,
+                "error_outlier": "false",
+                "source_program": "MYSQL CLIENT",
+                "high_volume_outlier": "true"
+            },
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--89543845-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2024-01-04T12:21:11.750Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "SecurityComplianceCenter",
+                    "action": "Data Transfer",
+                    "nt_ref": "2",
+                    "created": "2024-01-04T12:21:11.750Z",
+                    "outcome": "Success",
+                    "category": [
+                        "ThreatManagement"
+                    ],
+                    "host_ref": "3",
+                    "provider": "SecurityComplianceCenter",
+                    "user_ref": "4"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.18.20",
+                    "resolves_to_refs": [
+                        "5"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "6",
+                    "src_ref": "1",
+                    "dst_port": 443,
+                    "src_port": 127690,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "1"
+                    ],
+                    "hostname": "sales-database.baneandox.com",
+                    "host_id": "903daa5f5b044309a3587ae40c8fe077"
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "jason-flood@baneandox.com"
+                },
+                "5": {
+                    "type": "domain-name",
+                    "value": "sales-database.baneandox.com"
+                },
+                "6": {
+                    "type": "ipv4-addr",
+                    "value": "128.210.157.251"
+                },
+                "7": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "Data Exfiltration to Unsanctioned Apps",
+                    "ttp_tagging_refs": [
+                        "8",
+                        "10"
+                    ]
+                },
+                "8": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Exfiltration"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "9"
+                    ]
+                },
+                "9": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Exfiltration"
+                },
+                "10": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "Transfer Data to Cloud Account (T1537)"
+                        }
+                    }
+                }
+            },
+            "modified": "2024-01-04T12:21:11.750Z",
+            "last_observed": "2024-01-04T12:21:11.750Z",
+            "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
+            "first_observed": "2024-01-04T12:21:11.750Z",
+            "number_observed": 1
+        }
+    ]
+}
