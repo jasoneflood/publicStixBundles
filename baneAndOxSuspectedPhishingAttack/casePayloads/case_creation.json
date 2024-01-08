@@ -1,6 +1,6 @@
 {
     
-	"name": "Suspected Phishing attack",
+	"name": "Suspected Phishing Attack",
 	"discovered_date": 1704636000000,
 	"description": "Suspicious activity discovered on a number of systems within the BaneandOx Network",
 	"automatic_score": "10",
