@@ -195,7 +195,7 @@
     ]
   },
   {
-    "name": "RYUK malware signature detected by Falcon QRadar EDR",
+    "name": "RYUK malware signature detected by QRadar EDR",
     "description": "This file meets the file analysis ML algorithm's high-confidence threshold for malware. It has been specifically matched to RYUK",
     "score": "medium",
     "severity": 0.9,
@@ -302,7 +302,7 @@
     ]
   },
   {
-    "name": "RYUK malware signature detected by Falcon QRadar EDR",
+    "name": "RYUK malware signature detected by QRadar EDR",
     "description": "This file meets the file analysis ML algorithm's high-confidence threshold for malware. It has been specifically matched to RYUK",
     "score": "medium",
     "severity": 0.9,
