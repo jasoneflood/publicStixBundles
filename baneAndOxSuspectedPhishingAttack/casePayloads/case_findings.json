@@ -5,6 +5,7 @@
     "score": "medium",
     "original_time": 1704719367000,
     "mitre_ids": ["TA0001"],
+    "automatic_score": 5,
     "severity": 0.5,
     "cumulative_score": 0.5,
     "detection_source_type_name": "515",
@@ -47,6 +48,7 @@
             {
                 "scores": [
                     {
+                       "automatic_score": 5,
                         "severity": "0.5",
                         "category": "finding_parameter",
                         "description": "Proofpoint URL filtering",
@@ -93,6 +95,7 @@
     "name": "Download from Suspicious Domain",
     "description": "Detects download of certain file types from hosts in suspicious domains.",
     "score": "medium",
+    "automatic_score": 5,
     "severity": 0.5,
     "cumulative_score": 0.5,
     "detection_source_type_name": "509",
@@ -152,6 +155,7 @@
             {
                 "scores": [
                     {
+                        "automatic_score": 5,
                         "severity": "0.5",
                         "category": "finding_parameter",
                         "description": "Crowdstrike: Suspicious Domain",
@@ -193,6 +197,7 @@
     "name": "Malware detected by Falcon Crowdstrike ML",
     "description": "This file meets the File Analysis ML algorithm's high-confidence threshold for malware.",
     "score": "medium",
+    "automatic_score": 8,
     "severity": 0.5,
     "cumulative_score": 0.5,
     "detection_source_type_name": "509",
@@ -252,6 +257,7 @@
             {
                 "scores": [
                     {
+                        "automatic_score": 5,
                         "severity": "0.5",
                         "category": "finding_parameter",
                         "description": "Crowdstrike: Malware detected",
@@ -282,6 +288,7 @@
             "create_date": 1704719425000,
             "scores": [     
                 {           
+                    "automatic_score": 8,
                     "severity": "0.8",
                     "category": "Threat Intelligence",
                     "description": "X-Force Threat Intelligence",
@@ -297,6 +304,7 @@
     "name": "Windows Network Enumeration",
     "description": "A Network scan has been run from a compromised host preceded by Detected a Service Binary Path Changed followed by a User or Group Added preceded by Policy violation with process launched from Temp directory containing Success Audit: Windows Network Enumeration",
     "score": "high",
+     "automatic_score": 8,
     "severity": 0.8,
     "cumulative_score": 0.8,
     "detection_source_type_name": "514",
@@ -356,6 +364,7 @@
             {
                 "scores": [
                     {
+			"automatic_score": 8,
                         "severity": "0.5",
                         "category": "finding_parameter",
                         "description": "QRadar: Windows Network Enumeration",
@@ -382,6 +391,7 @@
     "name": "A Network Host Has Been Accessed from a Compromised Host",
     "description": "A Network Host Has Been Accessed from a Compromised Host preceded by Detected a Service Binary Path Changed followed by a User or Group Added preceded by Network Traffic From a Compromised Host preceded by Policy violation with process launched from Temp directory containing Success Audit: A network host was accessed",
     "score": "high",
+    "automatic_score": 8,
     "severity": 0.8,
     "cumulative_score": 0.8,
     "detection_source_type_name": "514",
@@ -441,6 +451,7 @@
             {
                 "scores": [
                     {
+			"automatic_score": 8,
                         "severity": "7.5",
                         "category": "finding_parameter",
                         "description": "QRadar: A Network Host Has Been Accessed from a Compromised Host",
@@ -477,6 +488,7 @@
     "name": "Abnormal queries to cloud data store",
     "description": "Abnormal queries to cloud data store preceded by Network Traffic From a Compromised Host preceded by Policy violation with process launched from Temp directory containing Success Audit: Abnormal queries to cloud data store",
     "score": "high",
+    "automatic_score": 8,
     "severity": 0.8,
     "cumulative_score": 0.8,
     "detection_source_type_name": "514",
@@ -572,6 +584,7 @@
     "name": "Data Exfiltration to Unsanctioned Apps",
     "description": "Data Exfiltration to Unsanctioned Apps preceded by Abnormal queries to cloud data store preceded by Network Traffic From a Compromised Host preceded by Policy violation with process launched from Temp directory containing Success Audit: Data Exfiltration to Unsanctioned Apps",
     "score": "high",
+    "automatic_score": 8,
     "severity": 1.0,
     "cumulative_score": 1.0,
     "detection_source_type_name": "514",
@@ -631,6 +644,7 @@
             {
                 "scores": [
                     {
+			"automatic_score": 8,
                         "severity": "7.5",
                         "category": "finding_parameter",
                         "description": "QRadar: Abnormal queries to cloud data store",
