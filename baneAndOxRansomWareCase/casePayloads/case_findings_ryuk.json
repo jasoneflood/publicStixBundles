@@ -98,7 +98,7 @@
     "severity": 0.8,
     "cumulative_score": 0.8,
     "automatic_score": "8",
-    "detection_source_type_name": "509",
+    "detection_source_type_name": "512",
     "original_time": 1704715822000,
     "mitre_ids": ["TA0002"],
     "external_mitre_ids": [],
@@ -132,7 +132,7 @@
       },
       {
         "name": "detection_source_type_name",
-        "value": "509"
+        "value": "512"
       },
       {
         "name": "detection_source_type_category",
@@ -158,9 +158,9 @@
                         "automatic_score": "8",
                         "severity": "0.8",
                         "category": "finding_parameter",
-                        "description": "Crowdstrike: Suspicious Domain",
+                        "description": "QRadar EDR: Suspicious Domain",
                         "module_name": "RULE_ENGINE",
-                        "rule_id": "Crowdstrike"
+                        "rule_id": "QRadar EDR"
                     }
                 ]
             }
@@ -195,13 +195,13 @@
     ]
   },
   {
-    "name": "RYUK malware signature detected by Falcon Crowdstrike ML",
+    "name": "RYUK malware signature detected by Falcon QRadar EDR",
     "description": "This file meets the file analysis ML algorithm's high-confidence threshold for malware. It has been specifically matched to RYUK",
     "score": "medium",
     "severity": 0.9,
     "cumulative_score": 0.9,
     "automatic_score": "9",
-    "detection_source_type_name": "509",
+    "detection_source_type_name": "512",
     "original_time": 1704715825000,
     "mitre_ids": ["TA0003","TA0004","TA0005"],
     "external_mitre_ids": [],
@@ -235,7 +235,7 @@
       },
       {
         "name": "detection_source_type_name",
-        "value": "509"
+        "value": "512"
       },
       {
         "name": "detection_source_type_category",
@@ -260,9 +260,9 @@
                     {
                         "severity": "0.9",
                         "category": "finding_parameter",
-                        "description": "Crowdstrike: RYUK malware detected",
+                        "description": "QRadar EDR: RYUK malware detected",
                         "module_name": "RULE_ENGINE",
-                        "rule_id": "Crowdstrike",
+                        "rule_id": "QRadar EDR",
                         "automatic_score": "9"
                     }
                 ]
@@ -302,13 +302,13 @@
     ]
   },
   {
-    "name": "RYUK malware signature detected by Falcon Crowdstrike ML",
+    "name": "RYUK malware signature detected by Falcon QRadar EDR",
     "description": "This file meets the file analysis ML algorithm's high-confidence threshold for malware. It has been specifically matched to RYUK",
     "score": "medium",
     "severity": 0.9,
     "cumulative_score": 0.9,
     "automatic_score": "9",
-    "detection_source_type_name": "509",
+    "detection_source_type_name": "512",
     "original_time": 1704715825000,
     "mitre_ids": ["TA0003","TA0004","TA0005"],
     "external_mitre_ids": [],
@@ -342,7 +342,7 @@
       },
       {
         "name": "detection_source_type_name",
-        "value": "509"
+        "value": "512"
       },
       {
         "name": "detection_source_type_category",
@@ -367,9 +367,9 @@
                     {
                         "severity": "0.9",
                         "category": "finding_parameter",
-                        "description": "Crowdstrike: RYUK malware detected",
+                        "description": "QRadar EDR: RYUK malware detected",
                         "module_name": "RULE_ENGINE",
-                        "rule_id": "Crowdstrike",
+                        "rule_id": "QRadar EDR",
                         "automatic_score": "9"
                     }
                 ]
