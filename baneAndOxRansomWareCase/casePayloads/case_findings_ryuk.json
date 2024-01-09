@@ -1,5 +1,5 @@
 [  {
-    "name": "MicroJan 075 Defender - detected phishing URL in mail",
+    "name": "Microsoft365 Defender - detected phishing URL in mail",
     "description": "A known phishing URL has been detected in an email.",
     "score": "medium",
     "original_time": 1704629367000,
@@ -91,7 +91,7 @@
     ]
   },
   {
-    "name": "Potential ransomeware downloaded from suspicious domain",
+    "name": "Potential ransomware downloaded from suspicious domain",
     "description": "A file has been downloaded of a file type known to be associated with ransomware from a host in a suspicious domain.",
     "score": "medium",
     "severity": 0.8,
