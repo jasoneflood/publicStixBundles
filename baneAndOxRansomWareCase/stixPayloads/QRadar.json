@@ -397,7 +397,7 @@
                     "type": "process",
                     "binary_ref": "8",
                     "parent_ref": "12",
-                    "command_line": "\"C:\\Windows\\system32\\ps1.exe\" hszuw.exe" ",
+                    "command_line": "\"C:\\Windows\\system32\\ps1.exe\" hszuw.exe ",
                     "creator_user_ref": "4"
                 },
                 "6": {
