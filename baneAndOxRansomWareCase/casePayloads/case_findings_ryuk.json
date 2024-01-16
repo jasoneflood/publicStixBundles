@@ -3,7 +3,7 @@
     "name": "Microsoft365 Defender - detected phishing URL in mail",
     "description": "A known phishing URL has been detected in an email.",
     "score": "medium",
-    "original_time": 1705234167000,
+    "original_time": 1705320567000,
     "mitre_ids": ["TA0001"],
     "automatic_score": 5,
     "severity": 0.5,
@@ -37,11 +37,11 @@
       },
       {
         "name": "original_time",
-        "value": "1705234167000"
+        "value": "1705320567000"
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=observed-data--d11332c3-af8e-411f-939f-549b8bf71380,time_observed=2024-01-14T12:09:27.7699973Z},{observable_ref=observed-data--f784555c-4b7c-4b50-8110-8fe0925ce743,time_observed=2024-01-14T12:09:27.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-01-14T12:09:27.7699973Z}]"
+        "value": "[{observable_ref=observed-data--d11332c3-af8e-411f-939f-549b8bf71380,time_observed=2024-01-15T12:09:27.7699973Z},{observable_ref=observed-data--f784555c-4b7c-4b50-8110-8fe0925ce743,time_observed=2024-01-15T12:09:27.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-01-15T12:09:27.7699973Z}]"
       }
     ],
     "explainability": [
@@ -99,7 +99,7 @@
     "cumulative_score": 0.8,
     "automatic_score": "8",
     "detection_source_type_name": "512",
-    "original_time": 1705234222000,
+    "original_time": 1705320622000,
     "mitre_ids": ["TA0002"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -120,7 +120,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234222000"
+        "value": "1705320622000"
       },
       {
         "name": "customer_id",
@@ -148,7 +148,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=observed-data--a054c753-6787-5a09-850f-a67d2cf585fd,time_observed=2024-01-14T12:10:22.7699973Z}]"
+        "value": "[{observable_ref=observed-data--a054c753-6787-5a09-850f-a67d2cf585fd,time_observed=2024-01-15T12:10:22.7699973Z}]"
       }
     ],
     "explainability": [
@@ -179,7 +179,7 @@
           {
             "severity": "0.8",
             "context": "url",
-            "create_date": 1705234222000,
+            "create_date": 1705320622000,
             "scores": [     
                 {
                     "automatic_score": "8",           
@@ -202,7 +202,7 @@
     "cumulative_score": 0.9,
     "automatic_score": "9",
     "detection_source_type_name": "512",
-    "original_time": 1705234225000,
+    "original_time": 1705320625000,
     "mitre_ids": ["TA0003","TA0004","TA0005"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -223,7 +223,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234225000"
+        "value": "1705320625000"
       },
       {
         "name": "customer_id",
@@ -251,7 +251,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=file--a054c753-6787-5a09-850f-a67d2cf585fd,time_observed=2024-01-14T12:10:25.7699973Z}]"
+        "value": "[{observable_ref=file--a054c753-6787-5a09-850f-a67d2cf585fd,time_observed=2024-01-15T12:10:25.7699973Z}]"
       }
     ],
     "explainability": [
@@ -286,7 +286,7 @@
           { 
             "severity": "0.9",
             "context": "file",
-            "create_date": 1705234225000,
+            "create_date": 1705320625000,
             "scores": [     
                 {           
                     "automatic_score": "9",
@@ -309,7 +309,7 @@
     "cumulative_score": 0.9,
     "automatic_score": "9",
     "detection_source_type_name": "512",
-    "original_time": 1705234225000,
+    "original_time": 1705320625000,
     "mitre_ids": ["TA0003","TA0004","TA0005"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -330,7 +330,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234225000"
+        "value": "1705320625000"
       },
       {
         "name": "customer_id",
@@ -358,7 +358,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=file--a054c753-6787-5a09-850f-a67d2cf585ff,time_observed=2024-01-14T12:10:25.7699973Z}]"
+        "value": "[{observable_ref=file--a054c753-6787-5a09-850f-a67d2cf585ff,time_observed=2024-01-15T12:10:25.7699973Z}]"
       }
     ],
     "explainability": [
@@ -393,7 +393,7 @@
           { 
             "severity": "0.9",
             "context": "file",
-            "create_date": 1705234225000,
+            "create_date": 1705320625000,
             "scores": [     
                 {           
                     "automatic_score": "9",
@@ -416,7 +416,7 @@
     "cumulative_score": 0.8,
     "automatic_score": "8",
     "detection_source_type_name": "514",
-    "original_time": 1705234555000,
+    "original_time": 1705320955000,
     "mitre_ids": ["TA0007"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -437,7 +437,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234555000"
+        "value": "1705320955000"
       },
       {
         "name": "customer_id",
@@ -465,7 +465,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-01-14T12:15:55.7699973Z}]"
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-01-15T12:15:55.7699973Z}]"
       }
     ],
     "explainability": [
@@ -503,7 +503,7 @@
     "cumulative_score": 0.8,
     "automatic_score": "8",
     "detection_source_type_name": "514",
-    "original_time": 1705234630000,
+    "original_time": 1705321030000,
     "mitre_ids": ["TA0008","T1021"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -524,7 +524,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234630000"
+        "value": "1705321030000"
       },
       {
         "name": "customer_id",
@@ -552,7 +552,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb427,time_observed=2024-01-14T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb428,time_observed=2024-01-14T12:17:10.7699973Z}]"
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb427,time_observed=2024-01-15T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb428,time_observed=2024-01-15T12:17:10.7699973Z}]"
       }
     ],
     "explainability": [
@@ -607,7 +607,7 @@
           { 
             "severity": "0.9",
             "context": "file",
-            "create_date": 1705234225000,
+            "create_date": 1705320625000,
             "scores": [     
                 {           
                     "automatic_score": "9",
@@ -630,7 +630,7 @@
     "cumulative_score": 0.8,
     "automatic_score": "8",
     "detection_source_type_name": "514",
-    "original_time": 1705234630000,
+    "original_time": 1705321030000,
     "mitre_ids": ["TA0008","T1021"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -651,7 +651,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234630000"
+        "value": "1705321030000"
       },
       {
         "name": "customer_id",
@@ -679,7 +679,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb437,time_observed=2024-01-14T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb438,time_observed=2024-01-14T12:17:10.7699973Z}]"
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb437,time_observed=2024-01-15T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb438,time_observed=2024-01-15T12:17:10.7699973Z}]"
       }
     ],
     "explainability": [
@@ -734,7 +734,7 @@
           { 
             "severity": "0.9",
             "context": "file",
-            "create_date": 1705234225000,
+            "create_date": 1705320625000,
             "scores": [     
                 {           
                     "automatic_score": "9",
@@ -757,7 +757,7 @@
     "cumulative_score": 0.8,
     "automatic_score": "8",
     "detection_source_type_name": "514",
-    "original_time": 1705234630000,
+    "original_time": 1705321030000,
     "mitre_ids": ["TA0008","T1021"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -778,7 +778,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234630000"
+        "value": "1705321030000"
       },
       {
         "name": "customer_id",
@@ -806,7 +806,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb447,time_observed=2024-01-14T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb448,time_observed=2024-01-14T12:17:10.7699973Z}]"
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb447,time_observed=2024-01-15T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb448,time_observed=2024-01-15T12:17:10.7699973Z}]"
       }
     ],
     "explainability": [
@@ -861,7 +861,7 @@
           { 
             "severity": "0.9",
             "context": "file",
-            "create_date": 1705234225000,
+            "create_date": 1705320625000,
             "scores": [     
                 {           
                     "automatic_score": "9",
@@ -884,7 +884,7 @@
     "cumulative_score": 0.8,
     "automatic_score": "8",
     "detection_source_type_name": "514",
-    "original_time": 1705234630000,
+    "original_time": 1705321030000,
     "mitre_ids": ["TA0008","T1021"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -905,7 +905,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234630000"
+        "value": "1705321030000"
       },
       {
         "name": "customer_id",
@@ -933,7 +933,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb457,time_observed=2024-01-14T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb458,time_observed=2024-01-14T12:17:10.7699973Z}]"
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb457,time_observed=2024-01-15T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb458,time_observed=2024-01-15T12:17:10.7699973Z}]"
       }
     ],
     "explainability": [
@@ -988,7 +988,7 @@
           { 
             "severity": "0.9",
             "context": "file",
-            "create_date": 1705234225000,
+            "create_date": 1705320625000,
             "scores": [     
                 {           
                     "automatic_score": "9",
@@ -1011,7 +1011,7 @@
     "cumulative_score": 0.8,
     "automatic_score": "8",
     "detection_source_type_name": "514",
-    "original_time": 1705234630000,
+    "original_time": 1705321030000,
     "mitre_ids": ["TA0008","T1021"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -1032,7 +1032,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234630000"
+        "value": "1705321030000"
       },
       {
         "name": "customer_id",
@@ -1060,7 +1060,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb467,time_observed=2024-01-14T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb468,time_observed=2024-01-14T12:17:10.7699973Z}]"
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb467,time_observed=2024-01-15T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb468,time_observed=2024-01-15T12:17:10.7699973Z}]"
       }
     ],
     "explainability": [
@@ -1115,7 +1115,7 @@
           { 
             "severity": "0.9",
             "context": "file",
-            "create_date": 1705234225000,
+            "create_date": 1705320625000,
             "scores": [     
                 {           
                     "automatic_score": "9",
@@ -1138,7 +1138,7 @@
     "cumulative_score": 0.8,
     "automatic_score": "8",
     "detection_source_type_name": "514",
-    "original_time": 1705234803000,
+    "original_time": 1705321203000,
     "mitre_ids": ["TA0009"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -1159,7 +1159,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234803000"
+        "value": "1705321203000"
       },
       {
         "name": "customer_id",
@@ -1187,7 +1187,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-01-14T12:20:03.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb418,time_observed=2024-01-14T12:20:03.7699973Z}]"
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-01-15T12:20:03.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb418,time_observed=2024-01-15T12:20:03.7699973Z}]"
       }
     ],
     "explainability": [
@@ -1235,7 +1235,7 @@
     "cumulative_score": 1.0,
     "automatic_score": "10",
     "detection_source_type_name": "514",
-    "original_time": 1705234871000,
+    "original_time": 1705321271000,
     "mitre_ids": ["TA0010"],
     "external_mitre_ids": [],
     "observable_refs": [
@@ -1256,7 +1256,7 @@
       },
       {
         "name": "time_observed",
-        "value": "1705234871000"
+        "value": "1705321271000"
       },
       {
         "name": "customer_id",
@@ -1284,7 +1284,7 @@
       },
       {
         "name": "observable_ref_list",
-        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-01-14T12:21:11.7699973Z},{observable_ref=observed-data--87f6532e-3ee1-4f84-973f-9431e98bb420,time_observed=2024-01-14T12:21:11.7699973Z}]"
+        "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-01-15T12:21:11.7699973Z},{observable_ref=observed-data--87f6532e-3ee1-4f84-973f-9431e98bb420,time_observed=2024-01-15T12:21:11.7699973Z}]"
       }
     ],
     "explainability": [
@@ -1339,7 +1339,7 @@
           { 
             "severity": "0.9",
             "context": "file",
-            "create_date": 1705234225000,
+            "create_date": 1705320625000,
             "scores": [     
                 {           
                     "automatic_score": "9",
