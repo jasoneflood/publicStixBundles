@@ -1,7 +1,7 @@
 {
     
 	"name": "Malware detected",
-	"discovered_date": 1707473993000,
+	"discovered_date": 1707646793000,
 	"description": "Crowdstrike Falcon ML detected malware",
 	"score": "High",
 	"cumulative_score": 1.0,
