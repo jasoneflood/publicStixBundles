@@ -154,8 +154,8 @@
                     "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
                 },
                 "12": {
-                    "type": "mac-addr",
-                    "value": "00:b0:d0:63:c2:a2"
+                    "type": "domain-name",
+                    "value": "frank-adams-pc.baneandox.com"
                 },
                 "13": {
                     "type": "x-ibm-finding",
@@ -198,7 +198,7 @@
             "number_observed": 1
         },
         {
-            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbadce2",
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
             "type": "observed-data",
             "created": "2024-02-11T12:17:10.940Z",
             "objects": {
@@ -293,8 +293,8 @@
                     "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
                 },
                 "13": {
-                    "type": "mac-addr",
-                    "value": "00:b0:d0:63:c2:a2"
+                    "type": "domain-name",
+                    "value": "frank-adams-pc.baneandox.com"
                 },
                 "14": {
                     "type": "ipv4-addr",
