@@ -8,20 +8,20 @@
             "id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
             "name": "shifter_proxy",
             "identity_class": "events",
-            "created": "2024-02-11T13:01:38.295Z",
-            "modified": "2024-02-11T13:01:38.295Z"
+            "created": "2024-02-24T13:01:38.295Z",
+            "modified": "2024-02-24T13:01:38.295Z"
         },
         {
             "id": "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b",
             "type": "observed-data",
-            "created": "2024-02-11T12:13:20.874Z",
+            "created": "2024-02-24T12:13:20.874Z",
             "objects": {
-                    "1": {
+                "1": {
                     "value": "198.23.124.4",
                     "name": "bao-us-pa1",
                     "type": "ipv4-addr",
                     "vendor": "49",
-                    "version": "Palo Feb 11.1.8"
+                    "version": "Palo Feb 24.1.8"
                 },
                 "2": {
                     "type": "network-traffic",
@@ -63,23 +63,23 @@
                     ]
                 }
             },
-            "modified": "2024-02-11T12:13:20.874Z",
-            "last_observed": "2024-02-11T12:13:20.874Z",
+            "modified": "2024-02-24T12:13:20.874Z",
+            "last_observed": "2024-02-24T12:13:20.874Z",
             "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
-            "first_observed": "2024-02-11T12:13:20.874Z",
+            "first_observed": "2024-02-24T12:13:20.874Z",
             "number_observed": 1
         },
         {
             "id": "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2",
             "type": "observed-data",
-            "created": "2024-02-11T12:15:55.950Z",
+            "created": "2024-02-24T12:15:55.950Z",
             "objects": {
                 "0": {
                     "code": 1,
                     "type": "x-oca-event",
                     "agent": "WindowsAuthServer @ jason-flood-pc",
                     "action": "Process Create",
-                    "created": "2024-02-11T12:15:55.950Z",
+                    "created": "2024-02-24T12:15:55.950Z",
                     "outcome": "Process Creation Success",
                     "category": [
                         "System"
@@ -155,7 +155,7 @@
                 },
                 "12": {
                     "type": "mac-addr",
-                    "value": "00:b0:d0:63:c2:26"
+                    "value": "10.10.20.25"
                 },
                 "13": {
                     "type": "x-ibm-finding",
@@ -180,7 +180,7 @@
                 "15": {
                     "type": "x-kill-chain-phase",
                     "phase_name": "Discovery",
-		    "kill_chain_name": "Discovery"
+                    "kill_chain_name": "Discovery"
                 },
                 "16": {
                     "type": "x-ibm-ttp-tagging",
@@ -191,16 +191,16 @@
                     }
                 }
             },
-            "modified": "2024-02-11T12:15:55.950Z",
-            "last_observed": "2024-02-11T12:15:55.950Z",
+            "modified": "2024-02-24T12:15:55.950Z",
+            "last_observed": "2024-02-24T12:15:55.950Z",
             "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
-            "first_observed": "2024-02-11T12:15:55.950Z",
+            "first_observed": "2024-02-24T12:15:55.950Z",
             "number_observed": 1
         },
         {
-            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedde2",
             "type": "observed-data",
-            "created": "2024-02-11T12:17:10.940Z",
+            "created": "2024-02-24T12:17:10.940Z",
             "objects": {
                 "0": {
                     "code": 1,
@@ -208,7 +208,7 @@
                     "agent": "WindowsAuthServer @ jason-flood-pc",
                     "action": "Process Create",
                     "nt_ref": "2",
-                    "created": "2024-02-11T12:17:10.940Z",
+                    "created": "2024-02-24T12:17:10.940Z",
                     "outcome": "Process Creation Success",
                     "category": [
                         "System"
@@ -294,7 +294,8 @@
                 },
                 "13": {
                    "type": "ipv4-addr",
-                    "value": "10.10.20.25"                },
+                    "value": "10.10.20.20"
+                },
                 "14": {
                     "type": "x-ibm-finding",
                     "severity": 100,
@@ -329,16 +330,16 @@
                     }
                 }
             },
-            "modified": "2024-02-11T12:17:11.940Z",
-            "last_observed": "2024-02-11T12:17:11.940Z",
+            "modified": "2024-02-24T12:17:11.940Z",
+            "last_observed": "2024-02-24T12:17:11.940Z",
             "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
-            "first_observed": "2024-02-11T12:17:11.940Z",
+            "first_observed": "2024-02-24T12:17:11.940Z",
             "number_observed": 1
         },
         {
-            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedee2",
             "type": "observed-data",
-            "created": "2024-02-11T12:17:10.940Z",
+            "created": "2024-02-24T12:17:10.940Z",
             "objects": {
                 "0": {
                     "code": 1,
@@ -346,7 +347,7 @@
                     "agent": "WindowsAuthServer @ jason-flood-pc",
                     "action": "Process Create",
                     "nt_ref": "2",
-                    "created": "2024-02-11T12:17:10.940Z",
+                    "created": "2024-02-24T12:17:10.940Z",
                     "outcome": "Process Creation Success",
                     "category": [
                         "System"
@@ -431,8 +432,9 @@
                     "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
                 },
                 "13": {
-                    "type": "ipv4-addr",
-                    "value": "172.20.18.21"                },
+                   "type": "ipv4-addr",
+                    "value": "10.10.20.20"
+                },
                 "14": {
                     "type": "ipv4-addr",
                     "value": "172.20.18.21",
@@ -478,16 +480,16 @@
                     }
                 }
             },
-            "modified": "2024-02-11T12:17:10.940Z",
-            "last_observed": "2024-02-11T12:17:10.940Z",
+            "modified": "2024-02-24T12:17:10.940Z",
+            "last_observed": "2024-02-24T12:17:10.940Z",
             "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
-            "first_observed": "2024-02-11T12:17:10.940Z",
+            "first_observed": "2024-02-24T12:17:10.940Z",
             "number_observed": 1
         },
         {
-            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedfe2",
             "type": "observed-data",
-            "created": "2024-02-11T12:17:11.940Z",
+            "created": "2024-02-24T12:17:11.940Z",
             "objects": {
                 "0": {
                     "code": 1,
@@ -495,7 +497,7 @@
                     "agent": "WindowsAuthServer @ john-clarke-pc",
                     "action": "Process Create",
                     "nt_ref": "2",
-                    "created": "2024-02-11T12:17:11.940Z",
+                    "created": "2024-02-24T12:17:11.940Z",
                     "outcome": "Process Creation Success",
                     "category": [
                         "System"
@@ -580,8 +582,8 @@
                     "command_line": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\\hszuw.exe"
                 },
                 "13": {
-                   "type": "ipv4-addr",
-                    "value": "10.10.20.20",
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.20"
                 },
                 "14": {
                     "type": "x-ibm-finding",
@@ -617,16 +619,16 @@
                     }
                 }
             },
-            "modified": "2024-02-11T12:17:11.940Z",
-            "last_observed": "2024-02-11T12:17:11.940Z",
+            "modified": "2024-02-24T12:17:11.940Z",
+            "last_observed": "2024-02-24T12:17:11.940Z",
             "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
-            "first_observed": "2024-02-11T12:17:11.940Z",
+            "first_observed": "2024-02-24T12:17:11.940Z",
             "number_observed": 1
         },
         {
-            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedcf2",
             "type": "observed-data",
-            "created": "2024-02-11T12:17:12.940Z",
+            "created": "2024-02-24T12:17:12.940Z",
             "objects": {
                 "0": {
                     "code": 1,
@@ -634,7 +636,7 @@
                     "agent": "WindowsAuthServer @ adam-franks-pc",
                     "action": "Process Create",
                     "nt_ref": "2",
-                    "created": "2024-02-11T12:17:12.940Z",
+                    "created": "2024-02-24T12:17:12.940Z",
                     "outcome": "Process Creation Success",
                     "category": [
                         "System"
@@ -649,7 +651,7 @@
                 },
                 "1": {
                     "type": "ipv4-addr",
-                    "value": "10.10.20.25",
+                    "value": "10.10.20.30",
                     "resolves_to_refs": [
                         "13"
                     ]
@@ -720,7 +722,7 @@
                 },
                 "13": {
                     "type": "ipv4-addr",
-                    "value": "10.10.20.20",
+                    "value": "10.10.20.20"
                 },
                 "14": {
                     "type": "x-ibm-finding",
@@ -746,7 +748,6 @@
                     "type": "x-kill-chain-phase",
                     "phase_name": "Execution",
                     "kill_chain_name": "Execution"
-
                 },
                 "17": {
                     "type": "x-ibm-ttp-tagging",
@@ -757,16 +758,16 @@
                     }
                 }
             },
-            "modified": "2024-02-11T12:17:12.940Z",
-            "last_observed": "2024-02-11T12:17:12.940Z",
+            "modified": "2024-02-24T12:17:12.940Z",
+            "last_observed": "2024-02-24T12:17:12.940Z",
             "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
-            "first_observed": "2024-02-11T12:17:12.940Z",
+            "first_observed": "2024-02-24T12:17:12.940Z",
             "number_observed": 1
         },
         {
-            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-9f746cbedce2",
             "type": "observed-data",
-            "created": "2024-02-11T12:17:13.940Z",
+            "created": "2024-02-24T12:17:13.940Z",
             "objects": {
                 "0": {
                     "code": 1,
@@ -774,7 +775,7 @@
                     "agent": "WindowsAuthServer @ robert-dibattista-pc",
                     "action": "Process Create",
                     "nt_ref": "2",
-                    "created": "2024-02-11T12:17:13.940Z",
+                    "created": "2024-02-24T12:17:13.940Z",
                     "outcome": "Process Creation Success",
                     "category": [
                         "System"
@@ -789,7 +790,7 @@
                 },
                 "1": {
                     "type": "ipv4-addr",
-                    "value": "10.10.20.25",
+                    "value": "10.10.20.35",
                     "resolves_to_refs": [
                         "13"
                     ]
@@ -821,7 +822,7 @@
                     "type": "process",
                     "binary_ref": "8",
                     "parent_ref": "12",
-                    "command_line": "\"C:\\Windows\\system32\\net.exe\" net1.exe ",
+                    "command_line": "\"C:\\Windows\\system32\net.exe\" net1.exe ",
                     "creator_user_ref": "4"
                 },
                 "6": {
@@ -859,8 +860,8 @@
                     "command_line": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\net1.exe"
                 },
                 "13": {
-                   "type": "ipv4-addr",
-                    "value": "10.10.20.20",
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.20"
                 },
                 "14": {
                     "type": "x-ibm-finding",
@@ -885,8 +886,7 @@
                 "16": {
                     "type": "x-kill-chain-phase",
                     "phase_name": "Execution",
-                     "kill_chain_name": "Execution"
-
+                    "kill_chain_name": "Execution"
                 },
                 "17": {
                     "type": "x-ibm-ttp-tagging",
@@ -897,16 +897,16 @@
                     }
                 }
             },
-            "modified": "2024-02-11T12:17:13.940Z",
-            "last_observed": "2024-02-11T12:17:13.940Z",
+            "modified": "2024-02-24T12:17:13.940Z",
+            "last_observed": "2024-02-24T12:17:13.940Z",
             "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
-            "first_observed": "2024-02-11T12:17:13.940Z",
+            "first_observed": "2024-02-24T12:17:13.940Z",
             "number_observed": 1
         },
         {
-            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f846cbedce2",
             "type": "observed-data",
-            "created": "2024-02-11T12:17:14.940Z",
+            "created": "2024-02-24T12:17:14.940Z",
             "objects": {
                 "0": {
                     "code": 1,
@@ -914,7 +914,7 @@
                     "agent": "WindowsAuthServer @ user-database",
                     "action": "Process Create",
                     "nt_ref": "2",
-                    "created": "2024-02-11T12:17:14.940Z",
+                    "created": "2024-02-24T12:17:14.940Z",
                     "outcome": "Process Creation Success",
                     "category": [
                         "System"
@@ -961,7 +961,7 @@
                     "type": "process",
                     "binary_ref": "8",
                     "parent_ref": "12",
-                    "command_line": "\"C:\\Windows\\system32\\net.exe\" net1.exe ",
+                    "command_line": "\"C:\\Windows\\system32\net.exe\" net1.exe ",
                     "creator_user_ref": "4"
                 },
                 "6": {
@@ -999,9 +999,8 @@
                     "command_line": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\C5211189-8C4C-4CC5-AED3-68548389F3AE\net1.exe"
                 },
                 "13": {
-                    "type": "ipv4-addr",
-                    "value": "10.10.20.20",
-
+                     "type": "ipv4-addr",
+                    "value": "10.10.20.20"
                 },
                 "14": {
                     "type": "x-ibm-finding",
@@ -1027,7 +1026,6 @@
                     "type": "x-kill-chain-phase",
                     "phase_name": "Execution",
                     "kill_chain_name": "Execution"
-
                 },
                 "17": {
                     "type": "x-ibm-ttp-tagging",
@@ -1038,16 +1036,16 @@
                     }
                 }
             },
-            "modified": "2024-02-11T12:17:14.940Z",
-            "last_observed": "2024-02-11T12:17:14.940Z",
+            "modified": "2024-02-24T12:17:14.940Z",
+            "last_observed": "2024-02-24T12:17:14.940Z",
             "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
-            "first_observed": "2024-02-11T12:17:14.940Z",
+            "first_observed": "2024-02-24T12:17:14.940Z",
             "number_observed": 1
         },
         {
             "id": "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c",
             "type": "observed-data",
-            "created": "2024-02-11T12:20:03.830Z",
+            "created": "2024-02-24T12:20:03.830Z",
             "objects": {
                 "0": {
                     "type": "user-account",
@@ -1106,10 +1104,10 @@
                     }
                 }
             },
-            "modified": "2024-02-11T12:20:03.830Z",
-            "last_observed": "2024-02-11T12:20:03.830Z",
+            "modified": "2024-02-24T12:20:03.830Z",
+            "last_observed": "2024-02-24T12:20:03.830Z",
             "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
-            "first_observed": "2024-02-11T12:20:03.830Z",
+            "first_observed": "2024-02-24T12:20:03.830Z",
             "x_com_guardium": {
                 "db_user": "jason-flood@baneandox.com",
                 "new_outlier": "false",
@@ -1123,9 +1121,9 @@
             "number_observed": 1
         },
         {
-            "id": "observed-data--89543845-acd4-467e-a785-8f746cbedce2",
+            "id": "observed-data--89543845-acd4-467e-a785-8f746dbedce2",
             "type": "observed-data",
-            "created": "2024-02-11T12:21:11.750Z",
+            "created": "2024-02-24T12:21:11.750Z",
             "objects": {
                 "0": {
                     "code": 1,
@@ -1133,7 +1131,7 @@
                     "agent": "SecurityComplianceCenter",
                     "action": "Data Transfer",
                     "nt_ref": "2",
-                    "created": "2024-02-11T12:21:11.750Z",
+                    "created": "2024-02-24T12:21:11.750Z",
                     "outcome": "Success",
                     "category": [
                         "ThreatManagement"
@@ -1172,8 +1170,8 @@
                     "user_id": "jason-flood@baneandox.com"
                 },
                 "5": {
-                    "type": "mac-addr",
-                    "value": "00:a4:c9:00:b3:a0"
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.20"
                 },
                 "6": {
                     "type": "ipv4-addr",
@@ -1213,10 +1211,10 @@
                     }
                 }
             },
-            "modified": "2024-02-11T12:21:11.750Z",
-            "last_observed": "2024-02-11T12:21:11.750Z",
+            "modified": "2024-02-24T12:21:11.750Z",
+            "last_observed": "2024-02-24T12:21:11.750Z",
             "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
-            "first_observed": "2024-02-11T12:21:11.750Z",
+            "first_observed": "2024-02-24T12:21:11.750Z",
             "number_observed": 1
         }
     ]
