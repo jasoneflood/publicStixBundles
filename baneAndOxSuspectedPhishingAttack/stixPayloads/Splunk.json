@@ -1,0 +1,106 @@
+{
+    "type": "bundle",
+    "id": "bundle--e41614dc-a4c3-49b7-a95b-467cf75ef2d9",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+            "name": "splunk",
+            "identity_class": "events",
+            "created": "2022-03-22T13:22:50.336Z",
+            "modified": "2022-03-22T13:22:50.336Z"
+        },
+        {
+            "id": "observed-data--4d3a2d6c-c8f2-4f83-a36e-cbf0565968aa",
+            "type": "observed-data",
+            "created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+            "created": "2023-05-08T13:12:54.984Z",
+            "modified": "2023-05-08T13:12:54.984Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "1.1.1.1"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "dst_ref": "4",
+                    "src_port": 60318,
+                    "dst_port": 3389,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "x_direction": "inbound"
+                },
+                "2": {
+                    "type": "x-oca-event",
+                    "ip_refs": [
+                        "0",
+                        "4"
+                    ],
+                    "user_ref": "5",
+                    "host_ref": "6",
+                    "module": "XmlWinEventLog:Microsoft-Windows-Sysmon/Operational",
+                    "process_ref": "8",
+                    "action": "Network connection",
+                    "code": "3",
+                    "provider": "Microsoft Sysmon",
+                    "outcome": "allowed",
+                    "x_application": "C:\\Windows\\System32\\svchost.exe",
+                    "x_event_id": "9383",
+                    "original_ref": "10",
+                    "created": "2023-01-11T15:29:45.000Z",
+                    "network_ref": "1"
+                },
+                "4": {
+                    "type": "ipv4-addr",
+                    "value": "1.1.1.1"
+                },
+                "5": {
+                    "type": "user-account",
+                    "user_id": "NETWORK SERVICE",
+                    "account_login": "'S-1-5-18'"
+                },
+                "6": {
+                    "type": "x-oca-asset",
+                    "hostname": "xxxxx"
+                },
+                "7": {
+                    "type": "x-splunk-data",
+                    "log_source": "XmlWinEventLog:Microsoft-Windows-Sysmon/Operational",
+                    "event_type": [
+                        "corelight_idx",
+                        "endpoint_services_processes",
+                        "ms-sysmon-network",
+                        "windows_event_signature"
+                    ],
+                    "log_source_type": "XmlWinEventLog"
+                },
+                "8": {
+                    "type": "process",
+                    "pid": 532,
+                    "name": "svchost.exe",
+                    "binary_ref": "9",
+                    "x_unique_id": "xxxxx",
+                    "opened_connection_refs": [
+                        "1"
+                    ]
+                },
+                "9": {
+                    "type": "file",
+                    "name": "svchost.exe"
+                },
+                "10": {
+                    "type": "artifact",
+                    "payload_bin": "PEV2ZW50IHhtbG5zPSdodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbi8yMDA0LzA4L2V2ZW50cy9ldmVudCc+PFN5c3RlbT48UHJvdmlkZXIgTmFtZT0nTWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uJyBHdWlkPSd7NTc3MDM4NWYtYzIyYS00M2UwLWJmNGMtMDZmNTY5OGZmYmQ5fScvPjxFdmVudElEPjM8L0V2ZW50SUQ+PFZlcnNpb24+NTwvVmVyc2lvbj48TGV2ZWw+NDwvTGV2ZWw+PFRhc2s+MzwvVGFzaz48T3Bjb2RlPjA8L09wY29kZT48S2V5d29yZHM+MHg4MDAwMDAwMDAwMDAwMDAwPC9LZXl3b3Jkcz48VGltZUNyZWF0ZWQgU3lzdGVtVGltZT0nMjAyMy0wMS0xMVQxNToyOTo0NS44MzIyODc0WicvPjxFdmVudFJlY29yZElEPjkzODM8L0V2ZW50UmVjb3JkSUQ+PENvcnJlbGF0aW9uLz48RXhlY3V0aW9uIFByb2Nlc3NJRD0nMTg4OCcgVGhyZWFkSUQ9JzI5NTYnLz48Q2hhbm5lbD5NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWw8L0NoYW5uZWw+PENvbXB1dGVyPkVDMkFNQVotTzRLQ1VLMzwvQ29tcHV0ZXI+PFNlY3VyaXR5IFVzZXJJRD0nUy0xLTUtMTgnLz48L1N5c3RlbT48RXZlbnREYXRhPjxEYXRhIE5hbWU9J1J1bGVOYW1lJz50ZWNobmlxdWVfaWQ9VDEwMjEsdGVjaG5pcXVlX25hbWU9UmVtb3RlIFNlcnZpY2VzPC9EYXRhPjxEYXRhIE5hbWU9J1V0Y1RpbWUnPjIwMjMtMDEtMTEgMTU6Mjk6NDMuNzMyPC9EYXRhPjxEYXRhIE5hbWU9J1Byb2Nlc3NHdWlkJz57N2E5N2I4NWYtNDU1MC02M2JlLTEzMDAtMDAwMDAwMDA3ZDAwfTwvRGF0YT48RGF0YSBOYW1lPSdQcm9jZXNzSWQnPjUzMjwvRGF0YT48RGF0YSBOYW1lPSdJbWFnZSc+QzpcV2luZG93c1xTeXN0ZW0zMlxzdmNob3N0LmV4ZTwvRGF0YT48RGF0YSBOYW1lPSdVc2VyJz5OVCBBVVRIT1JJVFlcTkVUV09SSyBTRVJWSUNFPC9EYXRhPjxEYXRhIE5hbWU9J1Byb3RvY29sJz50Y3A8L0RhdGE+PERhdGEgTmFtZT0nSW5pdGlhdGVkJz5mYWxzZTwvRGF0YT48RGF0YSBOYW1lPSdTb3VyY2VJc0lwdjYnPmZhbHNlPC9EYXRhPjxEYXRhIE5hbWU9J1NvdXJjZUlwJz4xOTguMjM1LjI0LjE1NTwvRGF0YT48RGF0YSBOYW1lPSdTb3VyY2VIb3N0bmFtZSc+LTwvRGF0YT48RGF0YSBOYW1lPSdTb3VyY2VQb3J0Jz42MDMxODwvRGF0YT48RGF0YSBOYW1lPSdTb3VyY2VQb3J0TmFtZSc+LTwvRGF0YT48RGF0YSBOYW1lPSdEZXN0aW5hdGlvbklzSXB2Nic+ZmFsc2U8L0RhdGE+PERhdGEgTmFtZT0nRGVzdGluYXRpb25JcCc+MTcyLjMxLjI5Ljc5PC9EYXRhPjxEYXRhIE5hbWU9J0Rlc3RpbmF0aW9uSG9zdG5hbWUnPi08L0RhdGE+PERhdGEgTmFtZT0nRGVzdGluYXRpb25Qb3J0Jz4zMzg5PC9EYXRhPjxEYXRhIE5hbWU9J0Rlc3RpbmF0aW9uUG9ydE5hbWUnPi08L0RhdGE+PC9FdmVudERhdGE+PC9FdmVudD4=",
+                    "mime_type": "text/plain"
+                }
+            },
+            "first_observed": "2023-01-11T15:29:45.000Z",
+            "last_observed": "2023-01-11T15:29:45.000Z",
+            "number_observed": 1
+        }
+    ],
+    "spec_version": "2.0"
+}
