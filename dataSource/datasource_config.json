@@ -1,0 +1,16 @@
+{
+    "config": {
+        "name": "DS_NAME",
+        "description": "DS_DESC",
+        "connectionId": "DS_CONN_ID",
+        "auth": {
+            "username": "",
+            "password": ""
+        },
+        "type": "stix_bundle",
+        "acl": {
+            "users": []
+        },
+        "class": "udi"
+    }
+}

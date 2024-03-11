@@ -1,0 +1,14 @@
+{
+    "name": "DS_NAME",
+    "description": "DS_DESC",
+    "apphostId": "",
+    "options": {
+        "concurrent": 4,
+        "search_timeout": 30,
+        "time_range": 5,
+        "mapping": {}
+    },
+    "url": "DS_URL",
+    "type": "stix_bundle",
+    "class": "udi"
+}

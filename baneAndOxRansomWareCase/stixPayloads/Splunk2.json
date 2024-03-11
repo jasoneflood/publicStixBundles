@@ -1,0 +1,107 @@
+{
+    "type": "bundle",
+    "id": "bundle--6afd74ac-8ea5-4989-9b5d-5a8c8f4fd955",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+            "name": "splunk",
+            "identity_class": "events",
+            "created": "2022-01-22T13:22:50.336Z",
+            "modified": "2023-03-22T13:22:50.336Z"
+        },
+        {
+            "id": "observed-data--1dca7286-c0f3-496b-9474-0c803fd02aa3",
+            "type": "observed-data",
+            "created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+            "created": "2023-05-09T07:33:49.320Z",
+            "modified": "2023-05-09T07:33:49.320Z",
+            "objects": {
+                "0": {
+                    "type": "user-account",
+                    "user_id": "SYSTEM",
+                    "account_login": "'S-1-5-18'"
+                },
+                "1": {
+                    "type": "x-oca-event",
+                    "user_ref": "0",
+                    "host_ref": "2",
+                    "module": "XmlWinEventLog:Microsoft-Windows-Sysmon/Operational",
+                    "process_ref": "4",
+                    "parent_process_ref": "8",
+                    "action": "Process creation",
+                    "code": "1",
+                    "provider": "Microsoft Sysmon",
+                    "outcome": "allowed",
+                    "x_dest": "xxxxx",
+                    "x_event_id": "13153",
+                    "original_ref": "10",
+                    "created": "2023-02-15T11:25:49.000Z"
+                },
+                "2": {
+                    "type": "x-oca-asset",
+                    "hostname": "xxxxx",
+                    "x_operating_system": "Microsoft Windows"
+                },
+                "3": {
+                    "type": "x-splunk-data",
+                    "log_source": "XmlWinEventLog:Microsoft-Windows-Sysmon/Operational",
+                    "event_type": [
+                        "corelight_idx",
+                        "endpoint_services_processes",
+                        "ms-sysmon-process",
+                        "windows_event_signature"
+                    ],
+                    "log_source_type": "XmlWinEventLog"
+                },
+                "4": {
+                    "type": "process",
+                    "command_line": "btool  server list general --no-log",
+                    "pid": 5248,
+                    "name": "btool.exe",
+                    "binary_ref": "5",
+                    "x_unique_id": "{7a97b85f-c13d-63ec-1103-000000007e00}",
+                    "parent_ref": "8",
+                    "x_original_file_name": "btool.exe"
+                },
+                "5": {
+                    "type": "file",
+                    "name": "btool.exe",
+                    "parent_directory_ref": "6"
+                },
+                "6": {
+                    "type": "directory",
+                    "path": "C:\\SplunkForwarder\\bin"
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "SHA-1": "6C0F0DBCBC1442960CFEE43105BDF2CED4A7133E",
+                        "MD5": "95439F1985B1CE750FF6693E7FB0F4BA",
+                        "SHA-256": "303113F43A6187007B250230D34499082CCB42BB7920754DDC4E5302294A0D2D",
+                        "x_IMPHASH": "D7E7C7FB1023AE6F5D81B244992E7451"
+                    }
+                },
+                "8": {
+                    "type": "process",
+                    "pid": 100,
+                    "name": "cmd.exe",
+                    "binary_ref": "9"
+                },
+                "9": {
+                    "type": "file",
+                    "name": "cmd.exe"
+                },
+                "10": {
+                    "type": "artifact",
+                    "payload_bin": "PEV2ZW50IHhtbG5zPSdodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbi8yMDA0LzA4L2V2ZW50cy9ldmVudCc+PFN5c3RlbT48UHJvdmlkZXIgTmFtZT0nTWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uJyBHdWlkPSd7NTc3MDM4NWYtYzIyYS00M2UwLWJmNGMtMDZmNTY5OGZmYmQ5fScvPjxFdmVudElEPjE8L0V2ZW50SUQ+PFZlcnNpb24+NTwvVmVyc2lvbj48TGV2ZWw+NDwvTGV2ZWw+PFRhc2s+MTwvVGFzaz48T3Bjb2RlPjA8L09wY29kZT48S2V5d29yZHM+MHg4MDAwMDAwMDAwMDAwMDAwPC9LZXl3b3Jkcz48VGltZUNyZWF0ZWQgU3lzdGVtVGltZT0nMjAyMy0wMi0xNVQxMToyNTo0OS42NDQ0NzMxWicvPjxFdmVudFJlY29yZElEPjEzMTUzPC9FdmVudFJlY29yZElEPjxDb3JyZWxhdGlvbi8+PEV4ZWN1dGlvbiBQcm9jZXNzSUQ9JzE1MjgnIFRocmVhZElEPSczMDI0Jy8+PENoYW5uZWw+TWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uL09wZXJhdGlvbmFsPC9DaGFubmVsPjxDb21wdXRlcj5FQzJBTUFaLU80S0NVSzM8L0NvbXB1dGVyPjxTZWN1cml0eSBVc2VySUQ9J1MtMS01LTE4Jy8+PC9TeXN0ZW0+PEV2ZW50RGF0YT48RGF0YSBOYW1lPSdSdWxlTmFtZSc+dGVjaG5pcXVlX2lkPVQxMDU5LHRlY2huaXF1ZV9uYW1lPUNvbW1hbmQtTGluZSBJbnRlcmZhY2U8L0RhdGE+PERhdGEgTmFtZT0nVXRjVGltZSc+MjAyMy0wMi0xNSAxMToyNTo0OS42NDA8L0RhdGE+PERhdGEgTmFtZT0nUHJvY2Vzc0d1aWQnPns3YTk3Yjg1Zi1jMTNkLTYzZWMtMTEwMy0wMDAwMDAwMDdlMDB9PC9EYXRhPjxEYXRhIE5hbWU9J1Byb2Nlc3NJZCc+NTI0ODwvRGF0YT48RGF0YSBOYW1lPSdJbWFnZSc+QzpcU3BsdW5rRm9yd2FyZGVyXGJpblxidG9vbC5leGU8L0RhdGE+PERhdGEgTmFtZT0nRmlsZVZlcnNpb24nPjkuMC4zPC9EYXRhPjxEYXRhIE5hbWU9J0Rlc2NyaXB0aW9uJz5idG9vbDwvRGF0YT48RGF0YSBOYW1lPSdQcm9kdWN0Jz5zcGx1bmsgQXBwbGljYXRpb248L0RhdGE+PERhdGEgTmFtZT0nQ29tcGFueSc+U3BsdW5rIEluYy48L0RhdGE+PERhdGEgTmFtZT0nT3JpZ2luYWxGaWxlTmFtZSc+YnRvb2wuZXhlPC9EYXRhPjxEYXRhIE5hbWU9J0NvbW1hbmRMaW5lJz5idG9vbCAgc2VydmVyIGxpc3QgZ2VuZXJhbCAtLW5vLWxvZzwvRGF0YT48RGF0YSBOYW1lPSdDdXJyZW50RGlyZWN0b3J5Jz5DOlxXaW5kb3dzXHN5c3RlbTMyXDwvRGF0YT48RGF0YSBOYW1lPSdVc2VyJz5OVCBBVVRIT1JJVFlcU1lTVEVNPC9EYXRhPjxEYXRhIE5hbWU9J0xvZ29uR3VpZCc+ezdhOTdiODVmLTdkYjgtNjNlYy1lNzAzLTAwMDAwMDAwMDAwMH08L0RhdGE+PERhdGEgTmFtZT0nTG9nb25JZCc+MHgzZTc8L0RhdGE+PERhdGEgTmFtZT0nVGVybWluYWxTZXNzaW9uSWQnPjA8L0RhdGE+PERhdGEgTmFtZT0nSW50ZWdyaXR5TGV2ZWwnPlN5c3RlbTwvRGF0YT48RGF0YSBOYW1lPSdIYXNoZXMnPlNIQTE9NkMwRjBEQkNCQzE0NDI5NjBDRkVFNDMxMDVCREYyQ0VENEE3MTMzRSxNRDU9OTU0MzlGMTk4NUIxQ0U3NTBGRjY2OTNFN0ZCMEY0QkEsU0hBMjU2PTMwMzExM0Y0M0E2MTg3MDA3QjI1MDIzMEQzNDQ5OTA4MkNDQjQyQkI3OTIwNzU0RERDNEU1MzAyMjk0QTBEMkQsSU1QSEFTSD1EN0U3QzdGQjEwMjNBRTZGNUQ4MUIyNDQ5OTJFNzQ1MTwvRGF0YT48RGF0YSBOYW1lPSdQYXJlbnRQcm9jZXNzR3VpZCc+ezdhOTdiODVmLWMxM2QtNjNlYy0xMDAzLTAwMDAwMDAwN2UwMH08L0RhdGE+PERhdGEgTmFtZT0nUGFyZW50UHJvY2Vzc0lkJz4xMDA8L0RhdGE+PERhdGEgTmFtZT0nUGFyZW50SW1hZ2UnPkM6XFdpbmRvd3NcU3lzdGVtMzJcY21kLmV4ZTwvRGF0YT48RGF0YSBOYW1lPSdQYXJlbnRDb21tYW5kTGluZSc+QzpcV2luZG93c1xzeXN0ZW0zMlxjbWQuZXhlIC9jIGJ0b29sIHNlcnZlciBsaXN0IGdlbmVyYWwgLS1uby1sb2c8L0RhdGE+PERhdGEgTmFtZT0nUGFyZW50VXNlcic+TlQgQVVUSE9SSVRZXFNZU1RFTTwvRGF0YT48L0V2ZW50RGF0YT48L0V2ZW50Pg==",
+                    "mime_type": "text/plain"
+                }
+            },
+            "first_observed": "2023-01-11T15:29:45.000Z",
+            "last_observed": "2023-01-11T15:29:45.000Z",
+            "number_observed": 1
+        }
+	],
+"spec_version": "2.0"
+}
