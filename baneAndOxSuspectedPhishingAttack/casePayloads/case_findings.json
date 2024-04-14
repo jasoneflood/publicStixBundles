@@ -3,7 +3,7 @@
         "name": "Microsoft365 Defender - detected phishing URL in mail",
         "description": "A known phishing URL has been detected in an email.",
         "score": "medium",
-        "original_time": 1712923767000,
+        "original_time": 1713010167000,
         "mitre_ids": [
             "TA0001"
         ],
@@ -43,11 +43,11 @@
             },
             {
                 "name": "original_time",
-                "value": "1712923767000"
+                "value": "1713010167000"
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=observed-data--d11332c3-af8e-411f-939f-549b8bf71380,time_observed=2024-04-12T12:09:27.7699973Z},{observable_ref=observed-data--f784555c-4b7c-4b50-8110-8fe0925ce743,time_observed=2024-04-12T12:09:27.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-04-12T12:09:27.7699973Z}]"
+                "value": "[{observable_ref=observed-data--d11332c3-af8e-411f-939f-549b8bf71380,time_observed=2024-04-13T12:09:27.7699973Z},{observable_ref=observed-data--f784555c-4b7c-4b50-8110-8fe0925ce743,time_observed=2024-04-13T12:09:27.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-04-13T12:09:27.7699973Z}]"
             }
         ],
         "explainability": [
@@ -105,7 +105,7 @@
         "severity": 0.5,
         "cumulative_score": 0.5,
         "detection_source_type_name": "509",
-        "original_time": 1712923822000,
+        "original_time": 1713010222000,
         "mitre_ids": [
             "TA0002"
         ],
@@ -128,7 +128,7 @@
             },
             {
                 "name": "time_observed",
-                "value": "1712923822000"
+                "value": "1713010222000"
             },
             {
                 "name": "customer_id",
@@ -156,7 +156,7 @@
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=observed-data--a054c753-6787-5a09-850f-a67d2cf585fd,time_observed=2024-04-12T12:10:22.7699973Z}]"
+                "value": "[{observable_ref=observed-data--a054c753-6787-5a09-850f-a67d2cf585fd,time_observed=2024-04-13T12:10:22.7699973Z}]"
             }
         ],
         "explainability": [
@@ -187,7 +187,7 @@
                     {
                         "severity": "0.8",
                         "context": "url",
-                        "create_date": 1712923822000,
+                        "create_date": 1713010222000,
                         "scores": [
                             {
                                 "severity": "0.8",
@@ -209,7 +209,7 @@
         "severity": 0.5,
         "cumulative_score": 0.5,
         "detection_source_type_name": "509",
-        "original_time": 1712923825000,
+        "original_time": 1713010225000,
         "mitre_ids": [
             "TA0003",
             "TA0004",
@@ -234,7 +234,7 @@
             },
             {
                 "name": "time_observed",
-                "value": "1712923825000"
+                "value": "1713010225000"
             },
             {
                 "name": "customer_id",
@@ -262,7 +262,7 @@
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=file--a054c753-6787-5a09-850f-a67d2cf585fd,time_observed=2024-04-12T12:10:25.7699973Z}]"
+                "value": "[{observable_ref=file--a054c753-6787-5a09-850f-a67d2cf585fd,time_observed=2024-04-13T12:10:25.7699973Z}]"
             }
         ],
         "explainability": [
@@ -297,7 +297,7 @@
                     {
                         "severity": "0.8",
                         "context": "file",
-                        "create_date": 1712923825000,
+                        "create_date": 1713010225000,
                         "scores": [
                             {
                                 "automatic_score": 8,
@@ -320,7 +320,7 @@
         "severity": 0.8,
         "cumulative_score": 0.8,
         "detection_source_type_name": "514",
-        "original_time": 1712924155000,
+        "original_time": 1713010555000,
         "mitre_ids": [
             "TA0007"
         ],
@@ -343,7 +343,7 @@
             },
             {
                 "name": "time_observed",
-                "value": "1712924155000"
+                "value": "1713010555000"
             },
             {
                 "name": "customer_id",
@@ -371,7 +371,7 @@
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-04-12T12:15:55.7699973Z}]"
+                "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-04-13T12:15:55.7699973Z}]"
             }
         ],
         "explainability": [
@@ -409,7 +409,7 @@
         "severity": 0.8,
         "cumulative_score": 0.8,
         "detection_source_type_name": "514",
-        "original_time": 1712924230000,
+        "original_time": 1713010630000,
         "mitre_ids": [
             "TA0008",
             "T1021"
@@ -434,7 +434,7 @@
             },
             {
                 "name": "time_observed",
-                "value": "1712924230000"
+                "value": "1713010630000"
             },
             {
                 "name": "customer_id",
@@ -462,7 +462,7 @@
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-04-12T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb418,time_observed=2024-04-12T12:17:10.7699973Z}]"
+                "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-04-13T12:17:10.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb418,time_observed=2024-04-13T12:17:10.7699973Z}]"
             }
         ],
         "explainability": [
@@ -510,7 +510,7 @@
         "severity": 0.8,
         "cumulative_score": 0.8,
         "detection_source_type_name": "514",
-        "original_time": 1712924403000,
+        "original_time": 1713010803000,
         "mitre_ids": [
             "TA0009"
         ],
@@ -534,7 +534,7 @@
             },
             {
                 "name": "time_observed",
-                "value": "1712924403000"
+                "value": "1713010803000"
             },
             {
                 "name": "customer_id",
@@ -562,7 +562,7 @@
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-04-12T12:20:03.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb418,time_observed=2024-04-12T12:20:03.7699973Z}]"
+                "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-04-13T12:20:03.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb418,time_observed=2024-04-13T12:20:03.7699973Z}]"
             }
         ],
         "explainability": [
@@ -609,7 +609,7 @@
         "severity": 1,
         "cumulative_score": 1,
         "detection_source_type_name": "514",
-        "original_time": 1712924471000,
+        "original_time": 1713010871000,
         "mitre_ids": [
             "TA0010"
         ],
@@ -633,7 +633,7 @@
             },
             {
                 "name": "time_observed",
-                "value": "1712924471000"
+                "value": "1713010871000"
             },
             {
                 "name": "customer_id",
@@ -661,7 +661,7 @@
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-04-12T12:21:11.7699973Z},{observable_ref=observed-data--87f6532e-3ee1-4f84-973f-9431e98bb420,time_observed=2024-04-12T12:21:11.7699973Z}]"
+                "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-04-13T12:21:11.7699973Z},{observable_ref=observed-data--87f6532e-3ee1-4f84-973f-9431e98bb420,time_observed=2024-04-13T12:21:11.7699973Z}]"
             }
         ],
         "explainability": [
