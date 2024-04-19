@@ -1,11 +1,11 @@
 {
     
 	"name": "RYUK Ransomware Rule Triggered",
-	"discovered_date": 1713358800000,
+	"discovered_date": 1713445200000,
 	"description": "Ryuk ransomware is a type of malware that hackers aim at high-value targets to infect systems and encrypt files until a ransom is paid. Named after a famous manga character in the movie Death Note, Ryuk ransomware attacks have hit businesses, governments, and public institutions like hospitals and schools. Ryuk ransomware, like all ransomware, can have a devastating impact, especially on targeted entities with critical digital assets — hospitals relying on electronic files to provide accurate medication, or utility plants who remotely control water facilities. Recently, cybercriminals have doubled down on ruthless attacks, and vulnerable populations aren't off the table when it comes to a Ryuk attack. It’s unknown who is behind Ryuk ransomware, but most sources point to Wizard Spider, an underground network of cybercriminals based primarily in Russia.",
 	"automatic_score": 10,
 	"explainability": {
-		"time_observed": 1713358800000,
+		"time_observed": 1713445200000,
 		"automatic_score": "10"
 	}
 }
