@@ -226,7 +226,7 @@
         ]
     },
     {
-       name": "QRadar EDR has detected malware",
+		"name": "QRadar EDR has detected malware",
         "description": "This file meets the File Analysis of QRadar EDRs algorithm's high-confidence threshold for malware.",
         "score": "high",
         "severity": 0.9,
