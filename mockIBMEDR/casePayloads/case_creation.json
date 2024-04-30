@@ -2,7 +2,7 @@
     
 	"name": "Malware detected",
 	"discovered_date": 1714295993000,
-	"description": "IBM QRadar EDR has detected Malware",
+	"description": "IBM QRadar EDR has detected Malware. Malware is a catch-all term for intrusive software developed by cybercriminals to steal data and damage or destroy computers and computer systems. Malware is short for malicious software. Examples of common malware include viruses, worms, Trojan viruses, spyware, adware, and ransomware.",
 	"score": "High",
 	"cumulative_score": 1.0,
 	"automatic_score": 10 
