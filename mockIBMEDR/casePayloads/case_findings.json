@@ -226,13 +226,13 @@
         ]
     },
     {
-		"name": "QRadar EDR has detected malware",
-        "description": "This file meets the File Analysis of QRadar EDRs algorithm's high-confidence threshold for malware.",
+		"name": "Microsoft Sentinel has detected malware",
+        "description": "Microsoft Sentinel high confidence threshold for malware.",
         "score": "high",
         "severity": 0.9,
         "cumulative_score": 0.9,
         "automatic_score": 9,
-        "detection_source_type_name": "512",
+        "detection_source_type_name": "505",
         "external_alert_id": "cs-d60f5b90-ecd8-4d77-8186-a801597ec767",
         "original_time": 1714309339000,
         "mitre_ids": [],
@@ -267,11 +267,11 @@
             },
             {
                 "name": "detection_source_type_name",
-                "value": "QRadar EDR"
+                "value": "Microsoft Sentinel"
             },
             {
                 "name": "detection_source_type_category",
-                "value": "EDR"
+                "value": "SIEM"
             },
             {
                 "name": "severity",
@@ -293,9 +293,9 @@
                         "severity": "0.8",
                         "automatic_score": 8,
                         "category": "finding_parameter",
-                        "description": "QRadar EDR: Malware detected",
+                        "description": "Microsoft Sentinel Rule Triggered",
                         "module_name": "RULE_ENGINE",
-                        "rule_id": "QRadar EDR"
+                        "rule_id": "Microsoft Sentinel Malware Alert"
                     }
                 ]
             }
