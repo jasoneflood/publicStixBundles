@@ -81,6 +81,14 @@
                         "connection_type": "QRadar EDR",
                         "connection_class": "udi"
                     },
+					"3079a446-1a08-40d0-a1bb-e998f369b1e5": {
+                        "configuration_id": "3079a446-1a08-40d0-a1bb-e998f369b1e65",
+                        "configuration_name": "Microsoft Sentinel",
+                        "connection_id": "1dccf359-a4b9-4235-8b1f-b13e4efad975",
+                        "connection_name": "Microsoft Sentinel",
+                        "connection_type": "Microsoft Sentinel",
+                        "connection_class": "udi"
+                    },
                     "c8241623-3a47-4afc-80cb-36593f29642d": {
                         "configuration_id": "c8241623-3a47-4afc-80cb-36593f29642d",
                         "configuration_name": "QRadar",
@@ -918,7 +926,7 @@
                                 "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2"
                             ],
                             "udi_data_sources": [
-                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e5"
                             ],
                             "risk": "low",
                             "score": 0.3
