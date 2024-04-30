@@ -1,0 +1,9 @@
+{
+    
+	"name": "Malware detected",
+	"discovered_date": 1714295993000,
+	"description": "IBM QRadar EDR has detected Malware",
+	"score": "High",
+	"cumulative_score": 1.0,
+	"automatic_score": 10 
+}
