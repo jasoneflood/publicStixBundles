@@ -12,7 +12,7 @@
         "severity": 0.5,
         "cumulative_score": 0.5,
         "automatic_score": 5,
-        "detection_source_type_name": "509",
+        "detection_source_type_name": "512",
         "external_alert_id": "cs-1b9f373-709f-5922-b19d-c536ad70e008",
         "observable_refs": [
             "user--87f6532e-3ee1-4f84-973f-9431e98bb416",
@@ -25,7 +25,7 @@
             },
             {
                 "name": "detection_source_type_name",
-                "value": "Crowdstrike"
+                "value": "QRadar EDR"
             },
             {
                 "name": "detection_source_type_category",
@@ -59,9 +59,9 @@
                         "severity": "0.5",
                         "automatic_score": 5,
                         "category": "finding_parameter",
-                        "description": "Crowdstrike: Forfiles|Pcaula Indirect Command Execution",
+                        "description": "QRadar EDR: Forfiles|Pcaula Indirect Command Execution",
                         "module_name": "RULE_ENGINE",
-                        "rule_id": "Crowdstrike"
+                        "rule_id": "QRadar EDR"
                     }
                 ]
             }
@@ -96,13 +96,13 @@
         ]
     },
     {
-        "name": "Malware detected by Falcon Crowdstrike ML",
-        "description": "This file meets the File Analysis ML algorithm's high-confidence threshold for malware.",
+        "name": "QRadar EDR has detected malware",
+        "description": "This file meets the File Analysis of QRadar EDRs algorithm's high-confidence threshold for malware.",
         "score": "high",
         "severity": 0.9,
         "cumulative_score": 0.9,
         "automatic_score": 9,
-        "detection_source_type_name": "509",
+        "detection_source_type_name": "512",
         "external_alert_id": "cs-d60f5b90-ecd8-4d77-8186-a801597ec762",
         "original_time": 1714309340000,
         "mitre_ids": [
@@ -142,7 +142,7 @@
             },
             {
                 "name": "detection_source_type_name",
-                "value": "Crowdstrike"
+                "value": "QRadar EDR"
             },
             {
                 "name": "detection_source_type_category",
@@ -168,9 +168,9 @@
                         "severity": "0.9",
                         "automatic_score": 9,
                         "category": "finding_parameter",
-                        "description": "Crowdstrike: Malware detected",
+                        "description": "QRadar EDR: Malware detected",
                         "module_name": "RULE_ENGINE",
-                        "rule_id": "Crowdstrike"
+                        "rule_id": "QRadar EDR"
                     }
                 ]
             }
@@ -226,13 +226,13 @@
         ]
     },
     {
-        "name": "Malware detected by Falcon Crowdstrike ML",
-        "description": "This file meets the File Analysis ML algorithm's high-confidence threshold for malware.",
+       name": "QRadar EDR has detected malware",
+        "description": "This file meets the File Analysis of QRadar EDRs algorithm's high-confidence threshold for malware.",
         "score": "high",
-        "severity": 0.8,
-        "cumulative_score": 0.8,
-        "automatic_score": 8,
-        "detection_source_type_name": "509",
+        "severity": 0.9,
+        "cumulative_score": 0.9,
+        "automatic_score": 9,
+        "detection_source_type_name": "512",
         "external_alert_id": "cs-d60f5b90-ecd8-4d77-8186-a801597ec767",
         "original_time": 1714309339000,
         "mitre_ids": [],
@@ -267,7 +267,7 @@
             },
             {
                 "name": "detection_source_type_name",
-                "value": "Crowdstrike"
+                "value": "QRadar EDR"
             },
             {
                 "name": "detection_source_type_category",
@@ -293,9 +293,9 @@
                         "severity": "0.8",
                         "automatic_score": 8,
                         "category": "finding_parameter",
-                        "description": "Crowdstrike: Malware detected",
+                        "description": "QRadar EDR: Malware detected",
                         "module_name": "RULE_ENGINE",
-                        "rule_id": "Crowdstrike"
+                        "rule_id": "QRadar EDR"
                     }
                 ]
             }
