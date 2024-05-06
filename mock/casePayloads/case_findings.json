@@ -3,7 +3,7 @@
         "name": "Forfiles|Pcaula Indirect Command Execution",
         "description": "A utility, such as forfiles.exe or pcaula.exe (Program Compatibility Assistant), that allows for command execution to bypass security restrictions that limit the use of command-line interpreters, was used. Investigate the process tree.",
         "score": "medium",
-        "original_time": 1714827681000,
+        "original_time": 1714914081000,
         "mitre_ids": [
             "TA0005",
             "T1202",
@@ -45,11 +45,11 @@
             },
             {
                 "name": "original_time",
-                "value": "1714831281000"
+                "value": "1714917681000"
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=user--87f6532e-3ee1-4f84-973f-9431e98bb416,time_observed=2024-05-04T12:05:20.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-05-04T12:05:20.7699973Z}]"
+                "value": "[{observable_ref=user--87f6532e-3ee1-4f84-973f-9431e98bb416,time_observed=2024-05-05T12:05:20.7699973Z},{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-05-05T12:05:20.7699973Z}]"
             }
         ],
         "explainability": [
@@ -104,7 +104,7 @@
         "automatic_score": 9,
         "detection_source_type_name": "509",
         "external_alert_id": "cs-d60f5b90-ecd8-4d77-8186-a801597ec762",
-        "original_time": 1714827740000,
+        "original_time": 1714914140000,
         "mitre_ids": [
             "TA0001",
             "TA0002"
@@ -130,7 +130,7 @@
             },
             {
                 "name": "time_observed",
-                "value": "1714831340000"
+                "value": "1714917740000"
             },
             {
                 "name": "customer_id",
@@ -158,7 +158,7 @@
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=file--a054c753-6787-5a09-850f-a67d2cf585fd,time_observed=2024-05-04T14:02:19.7699973Z}]"
+                "value": "[{observable_ref=file--a054c753-6787-5a09-850f-a67d2cf585fd,time_observed=2024-05-05T14:02:19.7699973Z}]"
             }
         ],
         "explainability": [
@@ -197,7 +197,7 @@
                         "severity": "8",
                         "automatic_score": 8,
                         "context": "file",
-                        "create_date": 1714831340000,
+                        "create_date": 1714917740000,
                         "scores": [
                             {
                                 "automatic_score": 8,
@@ -234,7 +234,7 @@
         "automatic_score": 8,
         "detection_source_type_name": "509",
         "external_alert_id": "cs-d60f5b90-ecd8-4d77-8186-a801597ec767",
-        "original_time": 1714827739000,
+        "original_time": 1714914139000,
         "mitre_ids": [],
         "external_mitre_ids": [],
         "observable_refs": [
@@ -255,7 +255,7 @@
             },
             {
                 "name": "time_observed",
-                "value": "1714831339000"
+                "value": "1714917739000"
             },
             {
                 "name": "customer_id",
@@ -283,7 +283,7 @@
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=file--f56fdab3-1b08-5725-9f9f-6e9dc152be66,time_observed=2024-05-04T14:02:19.7699973Z}]"
+                "value": "[{observable_ref=file--f56fdab3-1b08-5725-9f9f-6e9dc152be66,time_observed=2024-05-05T14:02:19.7699973Z}]"
             }
         ],
         "explainability": [
@@ -322,7 +322,7 @@
                         "severity": "8",
                         "automatic_score": 8,
                         "context": "file",
-                        "create_date": 1714831339000,
+                        "create_date": 1714917739000,
                         "scores": [
                             {
                                 "severity": "0.8",
@@ -359,7 +359,7 @@
         "cumulative_score": 0.5,
         "detection_source_type_name": "514",
         "external_alert_id": "12983",
-        "original_time": 1714827738000,
+        "original_time": 1714914138000,
         "mitre_ids": [],
         "external_mitre_ids": [],
         "observable_refs": [
@@ -380,7 +380,7 @@
             },
             {
                 "name": "time_observed",
-                "value": "1714831338000"
+                "value": "1714917738000"
             },
             {
                 "name": "customer_id",
@@ -408,7 +408,7 @@
             },
             {
                 "name": "observable_ref_list",
-                "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-05-04T15:01:19.7699973Z}]"
+                "value": "[{observable_ref=x-oca-asset--87f6532e-3ee1-4f84-973f-9431e98bb417,time_observed=2024-05-05T15:01:19.7699973Z}]"
             }
         ],
         "explainability": [
